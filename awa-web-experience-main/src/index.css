@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 150 20% 15%;
+
+    --card: 40 30% 97%;
+    --card-foreground: 150 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 20% 15%;
+
+    --primary: 145 45% 28%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 30 80% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 145 45% 28%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 150 20% 15%;
+    --sidebar-primary: 145 45% 28%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 40 20% 93%;
+    --sidebar-accent-foreground: 150 20% 15%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 145 45% 28%;
+
+    /* Custom tokens */
+    --warm-gold: 38 75% 55%;
+    --deep-green: 145 50% 22%;
+    --leaf-green: 120 35% 40%;
+    --sunrise-orange: 25 90% 55%;
+    --cream: 40 40% 95%;
+    --earth-brown: 25 30% 35%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-brand {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--deep-green) / 0.85), hsl(var(--primary) / 0.7));
+  }
+
+  .bg-gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--warm-gold) / 0.1), hsl(var(--cream)));
+  }
+
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--deep-green)));
+  }
+
+  .shadow-warm {
+    box-shadow: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+  }
+
+  .shadow-card {
+    box-shadow: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+  }
+}

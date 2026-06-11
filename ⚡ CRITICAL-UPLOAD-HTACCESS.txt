@@ -1,0 +1,153 @@
+================================================================================
+                    ⚡ CRITICAL: UPLOAD .htaccess FILE
+================================================================================
+
+STATUS: The appointment page shows 404 because .htaccess is missing!
+
+PROBLEM: 
+  Without .htaccess, React routing doesn't work on Hostinger
+  /appointment route returns 404
+
+SOLUTION:
+  Upload the NEW .htaccess file to Hostinger public_html/
+
+================================================================================
+                        📋 WHAT TO UPLOAD
+================================================================================
+
+File: .htaccess
+Location: dist/.htaccess
+Size: ~200 bytes
+
+Content:
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+  </IfModule>
+
+================================================================================
+                        🚀 HOW TO UPLOAD
+================================================================================
+
+Option 1: Via Hostinger File Manager (Easiest)
+  
+  1. Go to Hostinger Dashboard
+  2. Click File Manager
+  3. Navigate to public_html/
+  4. Click "Upload Files"
+  5. Select: C:\Users\Sakshi\Downloads\awa-web-experience-main (5)\awa-web-experience-main\dist\.htaccess
+  6. Click Upload
+  7. Verify file appears in public_html/ (may be hidden - enable "Show Hidden Files")
+
+Option 2: Via FTP Client
+
+  1. Open FileZilla or WinSCP
+  2. Connect to Hostinger
+  3. Navigate to public_html/
+  4. Drag & drop .htaccess file
+  5. Upload
+
+================================================================================
+                        ✅ VERIFICATION
+================================================================================
+
+After uploading .htaccess:
+
+1. Clear Browser Cache
+   Ctrl+Shift+Delete (Windows)
+   Cmd+Shift+Delete (Mac)
+
+2. Hard Refresh Page
+   Ctrl+F5 (Windows)
+   Cmd+Shift+R (Mac)
+
+3. Visit URLs
+   https://amodayawellness.com/ (Should work)
+   https://amodayawellness.com/members (Should work)
+   https://amodayawellness.com/appointment (Should NOW WORK ✅)
+
+4. Verify in File Manager
+   public_html/.htaccess (Should exist)
+
+================================================================================
+                        📝 IMPORTANT NOTES
+================================================================================
+
+.htaccess Location in public_html/:
+  ✅ CORRECT: public_html/.htaccess (root level)
+  ❌ WRONG: public_html/dist/.htaccess (subfolder)
+
+File Name:
+  ✅ CORRECT: .htaccess (with dot, no extension)
+  ❌ WRONG: htaccess or .htaccess.txt
+
+Hidden Files:
+  .htaccess is a hidden file
+  In Hostinger File Manager: Check "Show Hidden Files" to see it
+
+Permissions:
+  Should be: 644
+  (Hostinger auto-sets this)
+
+================================================================================
+                        🔧 IF STILL NOT WORKING
+================================================================================
+
+If appointment page still shows 404 after uploading .htaccess:
+
+1. Check .htaccess exists in public_html/
+   ✓ Via File Manager: Should see .htaccess
+   ✓ May be hidden - enable "Show Hidden Files"
+
+2. Verify mod_rewrite is enabled
+   Contact Hostinger support to enable mod_rewrite
+
+3. Check file permissions
+   .htaccess should be 644 (read/write for owner, read for others)
+   Contact Hostinger support if wrong
+
+4. Contact Hostinger Support
+   Tell them: "React routing not working, need mod_rewrite enabled"
+   Share this file if needed
+
+================================================================================
+                        ✨ FINAL CHECKLIST
+================================================================================
+
+Before uploading:
+  ✅ .htaccess file exists: dist/.htaccess
+  ✅ Content is correct (RewriteEngine On, etc.)
+  ✅ File size: ~200 bytes
+
+After uploading:
+  ✅ .htaccess in public_html/ (check File Manager)
+  ✅ Hidden files are enabled (if you can't see it)
+  ✅ Clear browser cache (Ctrl+Shift+Delete)
+  ✅ Hard refresh (Ctrl+F5)
+  ✅ Test URL: https://amodayawellness.com/appointment
+
+================================================================================
+                        🎯 SUMMARY
+================================================================================
+
+ISSUE: Appointment page returns 404
+
+ROOT CAUSE: Missing .htaccess file
+
+SOLUTION: Upload dist/.htaccess to public_html/
+
+TIME TO FIX: 2 minutes
+
+STATUS AFTER: ✅ All routes will work!
+
+================================================================================
+
+File Ready: C:\Users\Sakshi\Downloads\awa-web-experience-main (5)\awa-web-experience-main\dist\.htaccess
+
+Ready to upload!
+
+================================================================================

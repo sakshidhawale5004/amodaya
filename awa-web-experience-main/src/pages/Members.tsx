@@ -14,17 +14,17 @@ import {
 } from "@/components/ui/dialog";
 import { Award, BadgeCheck } from "lucide-react";
 
-import m1 from "@/assets/members/member-1.jpg";
-import m2 from "@/assets/members/member-2.jpg";
-import m3 from "@/assets/members/member-3.jpeg";
-import m4 from "@/assets/members/member-4.jpg";
-import m5 from "@/assets/members/member-5.jpeg";
-import m6 from "@/assets/members/member-6.jpeg";
-import m7 from "@/assets/members/member-7.jpeg";
-import m8 from "@/assets/members/member-8.jpeg";
-import m9 from "@/assets/members/member-9.jpeg";
-import m10 from "@/assets/members/member-10.jpeg";
-import m11 from "@/assets/members/member-11.jpeg";
+import pallavi from "@/assets/members/member-1.jpg";
+import dimple from "@/assets/members/dimple-thakkar.jpeg";
+import samir from "@/assets/members/dr-samir-prabhudesai.jpg";
+import sneha from "@/assets/members/member-4.jpg";
+import neelam from "@/assets/members/neelam-kaur.jpeg";
+import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
+import smita from "@/assets/members/dr-smita-lodhe.jpeg";
+import bhagyashree from "@/assets/members/bhagyashree-deshpande.jpg";
+import ruby from "@/assets/members/ruby-khan.jpeg";
+import swapnil from "@/assets/members/dr-swapnil-bhanushali.jpeg";
+import priti from "@/assets/members/member-11.jpeg";
 
 type Certificate = {
   title: string;
@@ -44,7 +44,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Pallavi Rahane",
     qualification: "Cosmetic Dentistry Specialist",
-    image: m1,
+    image: pallavi,
     bio: "Dr. Pallavi Rahane is a highly skilled cosmetic dentistry specialist dedicated to enhancing smiles and promoting oral wellness. With extensive training in advanced cosmetic dental procedures, she combines aesthetics with functional dentistry to deliver exceptional patient care and confidence.",
     certificates: [
       { title: "Cosmetic Dentistry Certification", file: "/certificates/Degree certificate bhagyashree deshpande.jpg" },
@@ -54,7 +54,7 @@ const doctors: Doctor[] = [
   {
     name: "Diimple Punit Thakkar",
     qualification: "Grapho Therapist",
-    image: m2,
+    image: dimple,
     bio: "Diimple Punit Thakkar is a certified Grapho Therapist specializing in handwriting analysis and grapho-therapeutic interventions. She uses the therapeutic science of handwriting to promote healing and personal development through holistic wellness approaches.",
     certificates: [
       { title: "Certified Grapho Therapist", file: "/certificates/dimplethakkarcerifcates (1).jpg" },
@@ -70,7 +70,7 @@ const doctors: Doctor[] = [
   {
     name: "Samir Prabhudesai",
     qualification: "Metabolic Health Coach - Weight Management",
-    image: m3,
+    image: samir,
     bio: "Samir Prabhudesai is a certified Metabolic Health Coach specializing in weight management and metabolic wellness. With expertise in personalized nutrition and lifestyle optimization, he helps clients achieve sustainable health transformation through evidence-based metabolic coaching.",
     certificates: [
       { title: "Metabolic Health Coaching Certification", file: "/certificates/smitalodhe.jpg" },
@@ -82,7 +82,7 @@ const doctors: Doctor[] = [
   {
     name: "Sneha Sravya",
     qualification: "Clinical Physiotherapist",
-    image: m4,
+    image: sneha,
     bio: "Sneha Sravya is a dedicated Clinical Physiotherapist with comprehensive expertise in evidence-based physical rehabilitation and movement therapy. She specializes in treating musculoskeletal conditions and optimizing functional recovery through personalized therapeutic interventions.",
     certificates: [
       { title: "Bachelor of Physiotherapy - Clinical Practitioner", file: "/certificates/drswapnilbhanushali.jpeg" },
@@ -94,7 +94,7 @@ const doctors: Doctor[] = [
   {
     name: "Neelam Kaur",
     qualification: "Sound Healing Practitioner",
-    image: m5,
+    image: neelam,
     bio: "Neelam Kaur is a certified Sound Healing Practitioner specializing in vibrational medicine and acoustic therapy. She harnesses the healing power of sound frequencies and vibrations to promote holistic wellness, stress relief, and emotional balance in patients.",
     certificates: [
       { title: "Sound Healing Certification", file: "/certificates/neelamkaur (1).pdf" },
@@ -109,7 +109,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Kalyani Patil",
     qualification: "Art Therapist & Emotional Intelligence Coach",
-    image: m6,
+    image: kalyani,
     bio: "Dr. Kalyani Patil is a licensed Art Therapist and Emotional Intelligence Coach combining creative expression with psychological wellness. She utilizes art-based interventions and emotional intelligence coaching to facilitate healing, self-discovery, and personal transformation.",
     certificates: [
       { title: "Licensed Art Therapist Certification", file: "/certificates/Dr Kalyani Certificate.pdf" },
@@ -124,7 +124,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Smita Lodhe",
     qualification: "Work Ergonomics Specialist",
-    image: m7,
+    image: smita,
     bio: "Dr. Smita Lodhe is a registered Work Ergonomics Specialist dedicated to optimizing workplace wellness and preventing occupational injuries. She designs evidence-based ergonomic interventions and workplace accommodations to promote employee health and productivity.",
     certificates: [
       { title: "Work Ergonomics Certification", file: "/certificates/rameshsuryavanshi.jpeg" },
@@ -136,7 +136,7 @@ const doctors: Doctor[] = [
   {
     name: "Bhagyashree Deshpande",
     qualification: "Dental Health Educator & Consultant",
-    image: m8,
+    image: bhagyashree,
     bio: "Bhagyashree Deshpande is a dedicated Dental Health Educator and Consultant committed to promoting oral health awareness and prevention. With extensive dental background, she provides expert guidance on dental wellness and preventive oral care strategies.",
     certificates: [
       { title: "Dental Health Certification", file: "/certificates/rubykhan  (1).png" },
@@ -152,7 +152,7 @@ const doctors: Doctor[] = [
   {
     name: "Ruby Khan",
     qualification: "Clinical Dietician",
-    image: m9,
+    image: ruby,
     bio: "Ruby Khan is a certified Clinical Dietician providing personalized nutritional assessment and medical nutrition therapy. She specializes in developing evidence-based dietary interventions for various health conditions and promoting optimal nutritional wellness.",
     certificates: [
       { title: "Clinical Dietician Certification - FSSA Council", file: "/certificates/rupalishaw (1).jpeg" },
@@ -168,7 +168,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Swapnil Bhanushali",
     qualification: "Ayurveda Specialist - Healthy Heart Wellness",
-    image: m10,
+    image: swapnil,
     bio: "Dr. Swapnil Bhanushali is an Ayurveda specialist with advanced expertise in cardiovascular wellness and heart health. He combines traditional Ayurvedic principles with modern holistic approaches to promote cardiac health and prevention of heart disease through integrative medicine.",
     certificates: [
       { title: "Ayurveda Vachaspati - M.D. (Ayurveda) - MUHS Nashik (July 13, 2023)", file: "/certificates/samiitsarode.jpg" },
@@ -180,7 +180,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Priti Yamdagni",
     qualification: "Emotional Intelligence Specialist",
-    image: m11,
+    image: priti,
     bio: "Dr. Priti Yamdagni is a certified Emotional Intelligence Specialist dedicated to developing emotional competencies and psychological resilience. She provides coaching and therapeutic interventions focused on emotional well-being, interpersonal effectiveness, and holistic mental health.",
     certificates: [
       { title: "Emotional Intelligence Certification", file: "/certificates/smitalodhe.jpg" },

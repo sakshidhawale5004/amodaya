@@ -218,9 +218,9 @@ const Members = () => {
                       variant="warm"
                       size="sm"
                       className="rounded-full px-5"
-                      onClick={() => navigate("/appointment")}
+                      onClick={() => navigate(`/doctor/${doctors.indexOf(doctor) + 1}/appointment`)}
                     >
-                      Appointment
+                      Book Now
                     </Button>
                     <Button
                       variant="outline"

@@ -11,6 +11,7 @@ import Membership from "./pages/Membership.tsx";
 import Events from "./pages/Events.tsx";
 import Members from "./pages/Members.tsx";
 import Appointment from "./pages/Appointment.tsx";
+import DoctorAppointment from "./pages/DoctorAppointment.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const AnimatedRoutes = () => {
         <Route path="/doctors" element={<PageTransition><Members /></PageTransition>} />
         <Route path="/appointment" element={<PageTransition><Appointment /></PageTransition>} />
         <Route path="/book" element={<PageTransition><Appointment /></PageTransition>} />
+        <Route path="/doctor/:doctorId/appointment" element={<PageTransition><DoctorAppointment /></PageTransition>} />
         <Route path="/news" element={<PageTransition><Events /></PageTransition>} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>

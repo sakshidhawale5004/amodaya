@@ -1,0 +1,170 @@
+================================================================================
+                    AWA DOCTOR APPOINTMENT URLS
+================================================================================
+
+After uploading to Hostinger, use these URLs to access each doctor's 
+appointment page:
+
+================================================================================
+                        INDIVIDUAL DOCTOR PAGES
+================================================================================
+
+DOCTOR 1: Diimple Punit Thakkar (Grapho Therapist)
+  https://amodayawellness.com/doctor/1/appointment
+
+DOCTOR 2: Samir Prabhudesai (Metabolic Health Coach)
+  https://amodayawellness.com/doctor/2/appointment
+
+DOCTOR 3: Neelam Kaur (Sound Healing Practitioner)
+  https://amodayawellness.com/doctor/3/appointment
+
+DOCTOR 4: Dr. Kalyani Patil (Art Therapist & EI Coach)
+  https://amodayawellness.com/doctor/4/appointment
+
+DOCTOR 5: Dr. Smita Lodhe (Work Ergonomics Specialist)
+  https://amodayawellness.com/doctor/5/appointment
+
+DOCTOR 6: Bhagyashree Deshpande (Dental Health Educator)
+  https://amodayawellness.com/doctor/6/appointment
+
+DOCTOR 7: Ruby Khan (Clinical Dietician)
+  https://amodayawellness.com/doctor/7/appointment
+
+DOCTOR 8: Dr. Swapnil Bhanushali (Ayurveda Specialist)
+  https://amodayawellness.com/doctor/8/appointment
+
+DOCTOR 9: Dr. Priti Yamdagni (Emotional Intelligence Specialist)
+  https://amodayawellness.com/doctor/9/appointment
+
+================================================================================
+                        OTHER APPOINTMENT PAGES
+================================================================================
+
+SINGLE APPOINTMENT PAGE (All Doctors)
+  https://amodayawellness.com/appointment
+  https://amodayawellness.com/book (alternate)
+
+================================================================================
+                        MAIN PAGES
+================================================================================
+
+HOME
+  https://amodayawellness.com/
+
+ABOUT
+  https://amodayawellness.com/about
+
+MEMBERSHIP
+  https://amodayawellness.com/membership
+
+EVENTS
+  https://amodayawellness.com/events
+
+DOCTORS (MEMBERS)
+  https://amodayawellness.com/members
+  https://amodayawellness.com/doctors (alternate)
+
+NEWS
+  https://amodayawellness.com/news
+
+================================================================================
+                        HOW TO USE
+================================================================================
+
+1. DIRECT LINK
+   Copy any URL above and paste into browser address bar
+
+2. FROM MEMBERS PAGE
+   Home → Doctors → Click "Book Now" on doctor card
+   → Automatically redirects to /doctor/{id}/appointment
+
+3. NAVIGATION
+   Home → Navbar → Book Appointment → Choose doctor → Route changes
+
+================================================================================
+                        IMPORTANT NOTES
+================================================================================
+
+• All 9 individual doctor pages work ONLY AFTER uploading .htaccess
+• Without .htaccess: You'll see 404 errors
+• Clear browser cache after upload (Ctrl+Shift+Delete)
+• Hard refresh pages (Ctrl+F5)
+• Test in incognito/private window for fresh cache
+
+================================================================================
+                        TESTING CHECKLIST
+================================================================================
+
+Test these 5 URLs as minimum:
+
+✓ https://amodayawellness.com/
+  (Should show home page)
+
+✓ https://amodayawellness.com/members
+  (Should show all 9 doctors)
+
+✓ https://amodayawellness.com/appointment
+  (Should show appointment page for all doctors)
+
+✓ https://amodayawellness.com/doctor/1/appointment
+  (Should show Diimple's appointment page)
+
+✓ https://amodayawellness.com/doctor/5/appointment
+  (Should show Dr. Smita's appointment page)
+
+If all 5 load without 404 errors, deployment is successful!
+
+================================================================================
+                        WHAT TO CHECK
+================================================================================
+
+For each doctor page, verify:
+
+□ Page loads (no 404)
+□ Doctor image displays
+□ Doctor name shows correctly
+□ Specialization displays
+□ Bio text appears
+□ Form fields visible
+□ Date picker works
+□ Time slots display
+□ Submit button works
+□ Mobile layout looks good
+
+================================================================================
+                        TROUBLESHOOTING
+================================================================================
+
+If you see 404 errors:
+
+1. Check .htaccess file
+   - Must be in public_html/ root (not in subfolder)
+   - File name is .htaccess (with dot, no extension)
+   - Check file permissions (644 or 755)
+
+2. Clear browser cache
+   - Ctrl+Shift+Delete (Windows)
+   - Cmd+Shift+Delete (Mac)
+   - Select "All time"
+
+3. Hard refresh
+   - Ctrl+F5 (Windows)
+   - Cmd+Shift+R (Mac)
+
+4. Try incognito window
+   - Ctrl+Shift+N (Windows)
+   - Cmd+Shift+N (Mac)
+   - Fresh cache, fresh session
+
+5. Check file structure on Hostinger
+   - public_html/.htaccess (must exist)
+   - public_html/index.html (must exist)
+   - public_html/assets/ (must exist)
+
+================================================================================
+
+Happy Booking! 🎉
+
+For support, contact: info@amodayawellness.com
+
+================================================================================

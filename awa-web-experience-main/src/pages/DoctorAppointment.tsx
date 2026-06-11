@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Clock, MapPin, Phone, Mail, Award, CheckCircle } from "lucide-react";
 
 import dimple from "@/assets/members/dimple-thakkar.jpeg";
-import samir from "@/assets/members/dr-samir-prabhudesai-D0RF7acf.jpeg";
+import samir from "@/assets/members/dr-samir-prabhudesai-member2.jpeg";
 import neelam from "@/assets/members/neelam-kaur.jpeg";
 import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
 import smita from "@/assets/members/dr-smita-lodhe.jpeg";

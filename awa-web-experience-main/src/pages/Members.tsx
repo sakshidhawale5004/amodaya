@@ -14,17 +14,15 @@ import {
 } from "@/components/ui/dialog";
 import { Award, BadgeCheck } from "lucide-react";
 
-import pallavi from "@/assets/members/member-1.jpg";
+import placeholder from "@/assets/members/member-1.jpg";
 import dimple from "@/assets/members/dimple-thakkar.jpeg";
 import samir from "@/assets/members/dr-samir-prabhudesai.jpg";
-import sneha from "@/assets/members/member-4.jpg";
 import neelam from "@/assets/members/neelam-kaur.jpeg";
 import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
 import smita from "@/assets/members/dr-smita-lodhe.jpeg";
 import bhagyashree from "@/assets/members/bhagyashree-deshpande.jpg";
 import ruby from "@/assets/members/ruby-khan.jpeg";
 import swapnil from "@/assets/members/dr-swapnil-bhanushali.jpeg";
-import priti from "@/assets/members/member-11.jpeg";
 
 type Certificate = {
   title: string;
@@ -44,7 +42,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Pallavi Rahane",
     qualification: "Cosmetic Dentistry Specialist",
-    image: pallavi,
+    image: placeholder,
     bio: "Dr. Pallavi Rahane is a highly skilled cosmetic dentistry specialist dedicated to enhancing smiles and promoting oral wellness. With extensive training in advanced cosmetic dental procedures, she combines aesthetics with functional dentistry to deliver exceptional patient care and confidence.",
     certificates: [
       { title: "Cosmetic Dentistry Certification", file: "/certificates/Degree certificate bhagyashree deshpande.jpg" },
@@ -82,7 +80,7 @@ const doctors: Doctor[] = [
   {
     name: "Sneha Sravya",
     qualification: "Clinical Physiotherapist",
-    image: sneha,
+    image: placeholder,
     bio: "Sneha Sravya is a dedicated Clinical Physiotherapist with comprehensive expertise in evidence-based physical rehabilitation and movement therapy. She specializes in treating musculoskeletal conditions and optimizing functional recovery through personalized therapeutic interventions.",
     certificates: [
       { title: "Bachelor of Physiotherapy - Clinical Practitioner", file: "/certificates/drswapnilbhanushali.jpeg" },
@@ -180,7 +178,7 @@ const doctors: Doctor[] = [
   {
     name: "Dr. Priti Yamdagni",
     qualification: "Emotional Intelligence Specialist",
-    image: priti,
+    image: placeholder,
     bio: "Dr. Priti Yamdagni is a certified Emotional Intelligence Specialist dedicated to developing emotional competencies and psychological resilience. She provides coaching and therapeutic interventions focused on emotional well-being, interpersonal effectiveness, and holistic mental health.",
     certificates: [
       { title: "Emotional Intelligence Certification", file: "/certificates/smitalodhe.jpg" },

@@ -18,6 +18,7 @@ const Navbar = () => {
     { to: "/membership", label: "Membership" },
     { to: "/events", label: "Events" },
     { to: "/members", label: "Doctors" },
+    { to: "/appointment", label: "Book Appointment" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

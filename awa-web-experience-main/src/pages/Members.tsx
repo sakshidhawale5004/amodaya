@@ -14,8 +14,9 @@ import {
 } from "@/components/ui/dialog";
 import { Award, BadgeCheck } from "lucide-react";
 
+import { useNavigate } from "react-router-dom";
 import dimple from "@/assets/members/dimple-thakkar.jpeg";
-import samir from "@/assets/members/dr-samir-prabhudesai.jpg";
+import samir from "@/assets/members/dr-samir-prabhudesai-D0RF7acf-final.jpg";
 import neelam from "@/assets/members/neelam-kaur.jpeg";
 import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
 import smita from "@/assets/members/dr-smita-lodhe.jpeg";
@@ -165,6 +166,7 @@ const doctors: Doctor[] = [
 const Members = () => {
   const [contactOpen, setContactOpen] = useState(false);
   const [selectedDoctor, setSelectedDoctor] = useState<Doctor | null>(null);
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -216,7 +218,7 @@ const Members = () => {
                       variant="warm"
                       size="sm"
                       className="rounded-full px-5"
-                      onClick={() => setContactOpen(true)}
+                      onClick={() => navigate("/appointment")}
                     >
                       Appointment
                     </Button>
@@ -325,7 +327,7 @@ const Members = () => {
                   className="rounded-full px-6"
                   onClick={() => {
                     setSelectedDoctor(null);
-                    setContactOpen(true);
+                    navigate("/appointment");
                   }}
                 >
                   Book Appointment

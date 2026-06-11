@@ -61,11 +61,10 @@ const doctors: Doctor[] = [
     image: samir,
     bio: "Samir Prabhudesai is a certified Metabolic Health Coach specializing in weight management and metabolic wellness. With expertise in personalized nutrition and lifestyle optimization, he helps clients achieve sustainable health transformation through evidence-based metabolic coaching.",
     certificates: [
-      { title: "Metabolic Health Coaching Certification", file: "/certificates/smitalodhe.jpg" },
-      { title: "Weight Management Specialist Diploma", file: "/certificates/dr samir prabhudesai.pdf" },
-      { title: "Metabolic Health Expert - CPD Accredited" }
+      { title: "Low Carb Nutrition & Metabolic Health Diploma - dLife Healthcare Foundation", file: "/certificates/dr samir prabhudesai.pdf" },
+      { title: "CPD Accredited Certificate - CPD Standards Office" }
     ],
-    certificateFiles: ["/certificates/smitalodhe.jpg", "/certificates/dr samir prabhudesai.pdf"],
+    certificateFiles: ["/certificates/dr samir prabhudesai.pdf"],
   },
   {
     name: "Neelam Kaur",
@@ -103,11 +102,11 @@ const doctors: Doctor[] = [
     image: smita,
     bio: "Dr. Smita Lodhe is a registered Work Ergonomics Specialist dedicated to optimizing workplace wellness and preventing occupational injuries. She designs evidence-based ergonomic interventions and workplace accommodations to promote employee health and productivity.",
     certificates: [
-      { title: "Work Ergonomics Certification", file: "/certificates/rameshsuryavanshi.jpeg" },
-      { title: "Occupational Health & Safety Specialist" },
+      { title: "Registered Occupational Therapist/Physiotherapist - Maharashtra State Council", file: "/certificates/smitalodhe.jpg" },
+      { title: "Registration No: 2013/04/PT/002803" },
       { title: "Workplace Wellness Program Developer" }
     ],
-    certificateFiles: ["/certificates/rameshsuryavanshi.jpeg"],
+    certificateFiles: ["/certificates/smitalodhe.jpg"],
   },
   {
     name: "Bhagyashree Deshpande",
@@ -115,9 +114,21 @@ const doctors: Doctor[] = [
     image: bhagyashree,
     bio: "Bhagyashree Deshpande is a dedicated Dental Health Educator and Consultant committed to promoting oral health awareness and prevention. With extensive dental background, she provides expert guidance on dental wellness and preventive oral care strategies.",
     certificates: [
-      { title: "Dental Health Certification", file: "/certificates/rubykhan  (1).png" },
-      { title: "Dental Health Educator Diploma", file: "/certificates/rubykhan  (2).png" },
-      { title: "Oral Health Promotion Specialist", file: "/certificates/rubykhan  (3).png" },
+      { title: "Bachelor of Dental Surgery (BDS) - MUHS Nashik", file: "/certificates/Degree certificate bhagyashree deshpande.jpg" },
+      { title: "Dental Health Educator Diploma" },
+      { title: "Oral Health Promotion Specialist" }
+    ],
+    certificateFiles: ["/certificates/Degree certificate bhagyashree deshpande.jpg"],
+  },
+  {
+    name: "Ruby Khan",
+    qualification: "Clinical Dietician",
+    image: ruby,
+    bio: "Ruby Khan is a certified Clinical Dietician providing personalized nutritional assessment and medical nutrition therapy. She specializes in developing evidence-based dietary interventions for various health conditions and promoting optimal nutritional wellness.",
+    certificates: [
+      { title: "Certified Nutrition and Weight Management Advisor - FSSA Council", file: "/certificates/rubykhan  (1).png" },
+      { title: "Certificate No: NWM07032101", file: "/certificates/rubykhan  (2).png" },
+      { title: "Accredited Training Provider - FSSA Council", file: "/certificates/rubykhan  (3).png" },
     ],
     certificateFiles: [
       "/certificates/rubykhan  (1).png",
@@ -126,32 +137,16 @@ const doctors: Doctor[] = [
     ],
   },
   {
-    name: "Ruby Khan",
-    qualification: "Clinical Dietician",
-    image: ruby,
-    bio: "Ruby Khan is a certified Clinical Dietician providing personalized nutritional assessment and medical nutrition therapy. She specializes in developing evidence-based dietary interventions for various health conditions and promoting optimal nutritional wellness.",
-    certificates: [
-      { title: "Clinical Dietician Certification - FSSA Council", file: "/certificates/rupalishaw (1).jpeg" },
-      { title: "Medical Nutrition Therapy Specialist", file: "/certificates/rupalishaw (2).jpeg" },
-      { title: "Registered Dietician - Professional Standards", file: "/certificates/rupalishaw (3).jpeg" },
-    ],
-    certificateFiles: [
-      "/certificates/rupalishaw (1).jpeg",
-      "/certificates/rupalishaw (2).jpeg",
-      "/certificates/rupalishaw (3).jpeg"
-    ],
-  },
-  {
     name: "Dr. Swapnil Bhanushali",
     qualification: "Ayurveda Specialist - Healthy Heart Wellness",
     image: swapnil,
     bio: "Dr. Swapnil Bhanushali is an Ayurveda specialist with advanced expertise in cardiovascular wellness and heart health. He combines traditional Ayurvedic principles with modern holistic approaches to promote cardiac health and prevention of heart disease through integrative medicine.",
     certificates: [
-      { title: "Ayurveda Vachaspati - M.D. (Ayurveda) - MUHS Nashik (July 13, 2023)", file: "/certificates/samiitsarode.jpg" },
-      { title: "Cardiovascular Wellness Specialist - Ayurveda" },
+      { title: "Ayurveda Vachaspati - M.D. (Ayurveda) - MUHS Nashik (July 13, 2023)", file: "/certificates/drswapnilbhanushali.jpeg" },
+      { title: "PRN: 2020240049" },
       { title: "Heart Health & Disease Prevention Practitioner" },
     ],
-    certificateFiles: ["/certificates/samiitsarode.jpg"],
+    certificateFiles: ["/certificates/drswapnilbhanushali.jpeg"],
   },
   {
     name: "Dr. Priti Yamdagni",
@@ -159,11 +154,11 @@ const doctors: Doctor[] = [
     image: priti,
     bio: "Dr. Priti Yamdagni is a certified Emotional Intelligence Specialist dedicated to developing emotional competencies and psychological resilience. She provides coaching and therapeutic interventions focused on emotional well-being, interpersonal effectiveness, and holistic mental health.",
     certificates: [
-      { title: "Emotional Intelligence Certification", file: "/certificates/smitalodhe.jpg" },
+      { title: "Emotional Intelligence Certification" },
       { title: "Emotional Wellness Coach - Certified Professional" },
       { title: "Psychological Resilience Practitioner" },
     ],
-    certificateFiles: ["/certificates/smitalodhe.jpg"],
+    certificateFiles: [],
   },
 ];
 

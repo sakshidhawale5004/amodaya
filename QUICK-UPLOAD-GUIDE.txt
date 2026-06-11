@@ -1,0 +1,68 @@
+═══════════════════════════════════════════════════════════════════
+   AWA WEBSITE - QUICK UPLOAD GUIDE (5 MINUTES)
+═══════════════════════════════════════════════════════════════════
+
+📦 FILE: AWA-PERFECT-FINAL.zip
+
+═══════════════════════════════════════════════════════════════════
+🚀 QUICK STEPS:
+═══════════════════════════════════════════════════════════════════
+
+1. LOGIN
+   → https://hpanel.hostinger.com
+   → Click your website → Manage → File Manager
+
+2. CLEAN
+   → Go to public_html
+   → Select ALL files/folders
+   → Delete everything
+
+3. UPLOAD
+   → Click "Upload"
+   → Select: AWA-PERFECT-FINAL.zip
+   → Wait for 100%
+
+4. EXTRACT
+   → Right-click AWA-PERFECT-FINAL.zip
+   → Extract → Extract to current directory
+   → Wait for completion
+
+5. DELETE ZIP
+   → Select AWA-PERFECT-FINAL.zip
+   → Delete
+
+6. VERIFY
+   → Check structure:
+     public_html/
+     ├── index.html
+     ├── .htaccess
+     ├── assets/
+     └── certificates/ (19 files inside)
+
+7. TEST
+   → Open: https://yourdomain.com
+   → Check: Doctors page, certificates clickable, no Lovable symbols
+
+═══════════════════════════════════════════════════════════════════
+✅ WHAT'S FIXED:
+═══════════════════════════════════════════════════════════════════
+
+✓ Doctor names match photos (positions 3-6 corrected)
+✓ Navigation shows "Doctors" not "Members"
+✓ AWA favicon (wellness logo)
+✓ All 19 certificates clickable
+✓ NO Lovable branding
+
+═══════════════════════════════════════════════════════════════════
+⚠️ IMPORTANT:
+═══════════════════════════════════════════════════════════════════
+
+- "certificates" folder must be LOWERCASE
+- Must be directly in public_html (not nested)
+- 19 files directly inside (no subfolders)
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Done! Your website is live!
+
+═══════════════════════════════════════════════════════════════════

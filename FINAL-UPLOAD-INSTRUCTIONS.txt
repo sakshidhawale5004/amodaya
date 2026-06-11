@@ -1,0 +1,167 @@
+═══════════════════════════════════════════════════════════════
+   AWA WEBSITE - FINAL UPLOAD INSTRUCTIONS
+═══════════════════════════════════════════════════════════════
+
+📦 FILE TO UPLOAD: AWA-COMPLETE-FINAL.zip
+
+LOCATION: C:\Users\Sakshi\Downloads\awa-web-experience-main (5)\AWA-COMPLETE-FINAL.zip
+
+═══════════════════════════════════════════════════════════════
+
+✅ WHAT'S INCLUDED:
+
+1. ✅ Dr. Smita Lodhe name CORRECTED (position 4)
+2. ✅ All 19 certificate files in /certificates/ folder
+3. ✅ Clickable certificates that open in new tab
+4. ✅ AWA wellness logo favicon (NO lovable branding)
+5. ✅ Navigation menu shows "Doctors" (not "Members")
+6. ✅ All doctor information accurate
+7. ✅ Professional design with hover effects
+
+═══════════════════════════════════════════════════════════════
+
+🚀 UPLOAD STEPS:
+
+1. LOGIN TO HOSTINGER
+   → Go to: https://hpanel.hostinger.com
+   → Login with your credentials
+
+2. OPEN FILE MANAGER
+   → Click on your website
+   → Click "File Manager" button
+
+3. GO TO public_html
+   → Navigate to public_html folder
+
+4. BACKUP (OPTIONAL)
+   → Select all files
+   → Download as backup
+
+5. DELETE OLD FILES
+   → Select ALL files in public_html
+   → Click "Delete"
+   → Confirm deletion
+
+6. UPLOAD NEW ZIP
+   → Click "Upload" button
+   → Select: AWA-COMPLETE-FINAL.zip
+   → Wait for upload to complete
+
+7. EXTRACT ZIP
+   → Right-click on AWA-COMPLETE-FINAL.zip
+   → Click "Extract"
+   → Extract to current directory
+
+8. MOVE FILES TO ROOT
+   → Open the extracted folder
+   → Select ALL files inside (index.html, assets, certificates, etc.)
+   → Click "Move"
+   → Move to public_html root
+   → Delete the empty folder and ZIP file
+
+9. VERIFY STRUCTURE
+   Your public_html should look like:
+   
+   public_html/
+   ├── index.html              ✅
+   ├── .htaccess              ✅
+   ├── favicon.png            ✅ (AWA logo)
+   ├── assets/                ✅
+   │   └── [all files]
+   └── certificates/          ✅ (19 files)
+       ├── Degree certificate bhagyashree deshpande.jpg
+       ├── dimplethakkarcerifcates (1).jpg
+       ├── dimplethakkarcerifcates (2).jpg
+       ├── dimplethakkarcerifcates (3).jpg
+       ├── Dr Kalyani Certificate.pdf
+       ├── dr samir prabhudesai.pdf
+       ├── drswapnilbhanushali.jpeg
+       ├── KALYANI PATIL  Udyam Registration Certificate.pdf
+       ├── neelamkaur (1).pdf
+       ├── neelamkaur (2).pdf
+       ├── rameshsuryavanshi.jpeg
+       ├── rubykhan  (1).png
+       ├── rubykhan  (2).png
+       ├── rubykhan  (3).png
+       ├── rupalishaw (1).jpeg
+       ├── rupalishaw (2).jpeg
+       ├── rupalishaw (3).jpeg
+       ├── samiitsarode.jpg
+       └── smitalodhe.jpg
+
+10. TEST YOUR WEBSITE
+    → Go to: https://amodayawellness.com
+    → Clear browser cache (Ctrl+Shift+Delete)
+    → Refresh the page
+
+═══════════════════════════════════════════════════════════════
+
+✅ TESTING CHECKLIST:
+
+□ Website loads at https://amodayawellness.com
+□ AWA logo shows in browser tab (not lovable logo)
+□ Navigation shows: Home | About Us | Membership | Events | Doctors
+□ Click "Doctors" menu
+□ All 11 doctors display correctly
+□ Position 4 shows "Dr. Smita Lodhe" (NOT Dr. Dimple Thakkar)
+□ Click "View More" on each doctor
+□ Certificates are listed
+□ Click on certificate links
+□ Certificates open in new tab (images/PDFs)
+□ No lovable branding visible anywhere
+□ All pages work (Home, About, Events, Membership)
+
+═══════════════════════════════════════════════════════════════
+
+🎯 TEST CERTIFICATE URLS:
+
+After upload, test these URLs to verify certificates work:
+
+1. https://amodayawellness.com/certificates/dimplethakkarcerifcates%20(1).jpg
+   → Should show: Dimple Thakkar's certificate
+
+2. https://amodayawellness.com/certificates/Dr%20Kalyani%20Certificate.pdf
+   → Should show: Dr. Kalyani's PDF
+
+3. https://amodayawellness.com/certificates/smitalodhe.jpg
+   → Should show: Dr. Smita Lodhe's certificate
+
+If all three work, ALL certificates will work!
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ IMPORTANT NOTES:
+
+1. Files must be in public_html ROOT (not in a subfolder)
+2. certificates folder must be lowercase
+3. Clear browser cache after upload
+4. Wait 2-3 minutes for changes to propagate
+
+═══════════════════════════════════════════════════════════════
+
+🎉 AFTER SUCCESSFUL UPLOAD:
+
+Your website will have:
+✅ Correct doctor names
+✅ Working clickable certificates
+✅ AWA logo favicon
+✅ Professional appearance
+✅ No branding symbols
+
+═══════════════════════════════════════════════════════════════
+
+📞 NEED HELP?
+
+If you see any issues:
+1. Clear browser cache completely
+2. Try in incognito/private window
+3. Check file structure in Hostinger File Manager
+4. Verify certificates folder is in public_html root
+
+═══════════════════════════════════════════════════════════════
+
+✨ YOU'RE READY TO GO LIVE! ✨
+
+Upload AWA-COMPLETE-FINAL.zip and your website will be perfect!
+
+═══════════════════════════════════════════════════════════════

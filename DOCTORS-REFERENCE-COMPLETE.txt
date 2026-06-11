@@ -1,0 +1,165 @@
+═══════════════════════════════════════════════════════════════════
+   AWA - ALL 11 DOCTORS - COMPLETE REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+Use this to verify all doctors on the live website.
+
+═══════════════════════════════════════════════════════════════════
+
+POSITION 1: Dr. Pallavi Rahane
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Cosmetic Dentistry Specialist                   │
+│                                                                  │
+│ Bio: Highly skilled cosmetic dentistry specialist dedicated    │
+│      to enhancing smiles and promoting oral wellness through   │
+│      advanced cosmetic dental procedures.                      │
+│                                                                  │
+│ Certificate: Cosmetic Dentistry Certification                 │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 2: Diimple Punit Thakkar
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Grapho Therapist                                │
+│                                                                  │
+│ Bio: Certified Grapho Therapist specializing in handwriting     │
+│      analysis and grapho-therapeutic interventions using the   │
+│      therapeutic science of handwriting.                       │
+│                                                                  │
+│ Certificates: Certified Grapho Therapist, Graphotherapy        │
+│               Certification, Handwriting Analysis Expert       │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 3: Samir Prabhudesai
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Metabolic Health Coach - Weight Management      │
+│                                                                  │
+│ Bio: Certified Metabolic Health Coach specializing in weight    │
+│      management and metabolic wellness with expertise in        │
+│      personalized nutrition and lifestyle optimization.         │
+│                                                                  │
+│ Certificates: Metabolic Health Coaching Certification,          │
+│               Weight Management Specialist Diploma              │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 4: Sneha Sravya
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Clinical Physiotherapist                         │
+│                                                                  │
+│ Bio: Dedicated Clinical Physiotherapist with comprehensive      │
+│      expertise in evidence-based physical rehabilitation        │
+│      and movement therapy.                                     │
+│                                                                  │
+│ Certificates: Bachelor of Physiotherapy - Clinical Practitioner │
+│               Clinical Physiotherapy Certification               │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 5: Neelam Kaur
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Sound Healing Practitioner                       │
+│                                                                  │
+│ Bio: Certified Sound Healing Practitioner specializing in        │
+│      vibrational medicine and acoustic therapy, harnessing      │
+│      healing power of sound frequencies.                        │
+│                                                                  │
+│ Certificates: Sound Healing Certification,                      │
+│               Vibrational Medicine Practitioner                 │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 6: Dr. Kalyani Patil
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Art Therapist & Emotional Intelligence Coach    │
+│                                                                  │
+│ Bio: Licensed Art Therapist and Emotional Intelligence Coach    │
+│      combining creative expression with psychological wellness  │
+│      using art-based interventions.                            │
+│                                                                  │
+│ Certificates: Licensed Art Therapist Certification,             │
+│               Emotional Intelligence Coach Practitioner - IAPCCT │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 7: Dr. Smita Lodhe
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Work Ergonomics Specialist                       │
+│                                                                  │
+│ Bio: Registered Work Ergonomics Specialist dedicated to         │
+│      optimizing workplace wellness and preventing               │
+│      occupational injuries through evidence-based               │
+│      ergonomic interventions.                                  │
+│                                                                  │
+│ Certificates: Work Ergonomics Certification,                   │
+│               Occupational Health & Safety Specialist           │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 8: Bhagyashree Deshpande
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Dental Health Educator & Consultant             │
+│                                                                  │
+│ Bio: Dedicated Dental Health Educator and Consultant            │
+│      committed to promoting oral health awareness and           │
+│      prevention with expert guidance.                          │
+│                                                                  │
+│ Certificates: Dental Health Certification,                      │
+│               Dental Health Educator Diploma,                   │
+│               Oral Health Promotion Specialist                  │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 9: Ruby Khan
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Clinical Dietician                               │
+│                                                                  │
+│ Bio: Certified Clinical Dietician providing personalized         │
+│      nutritional assessment and medical nutrition therapy       │
+│      for various health conditions.                            │
+│                                                                  │
+│ Certificates: Clinical Dietician Certification - FSSA Council,  │
+│               Medical Nutrition Therapy Specialist,             │
+│               Registered Dietician                              │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 10: Dr. Swapnil Bhanushali
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Ayurveda Specialist - Healthy Heart Wellness    │
+│                                                                  │
+│ Bio: Ayurveda specialist with advanced expertise in             │
+│      cardiovascular wellness and heart health, combining        │
+│      Ayurvedic principles with modern holistic approaches.      │
+│                                                                  │
+│ Certificates: Ayurveda Vachaspati - M.D. (Ayurveda),           │
+│               Cardiovascular Wellness Specialist - Ayurveda,    │
+│               Heart Health & Disease Prevention Practitioner    │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 11: Dr. Priti Yamdagni
+┌─────────────────────────────────────────────────────────────────┐
+│ Specialization: Emotional Intelligence Specialist                │
+│                                                                  │
+│ Bio: Certified Emotional Intelligence Specialist dedicated      │
+│      to developing emotional competencies and psychological     │
+│      resilience with focus on emotional well-being.            │
+│                                                                  │
+│ Certificates: Emotional Intelligence Certification,             │
+│               Emotional Wellness Coach - Certified Professional │
+└─────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+✅ QUICK VERIFICATION:
+═══════════════════════════════════════════════════════════════════
+
+After uploading, check:
+
+□ Position 1: Dr. Pallavi Rahane - Cosmetic Dentistry
+□ Position 2: Diimple Punit Thakkar - Grapho Therapist
+□ Position 3: Samir Prabhudesai - Metabolic Health Coach
+□ Position 4: Sneha Sravya - Clinical Physiotherapy
+□ Position 5: Neelam Kaur - Sound Healing
+□ Position 6: Dr. Kalyani Patil - Art Therapist
+□ Position 7: Dr. Smita Lodhe - Work Ergonomics
+□ Position 8: Bhagyashree Deshpande - Dental Health
+□ Position 9: Ruby Khan - Clinical Dietician
+□ Position 10: Dr. Swapnil Bhanushali - Ayurveda (Heart)
+□ Position 11: Dr. Priti Yamdagni - Emotional Intelligence
+
+═══════════════════════════════════════════════════════════════════
+🎉 All 11 doctors with correct names and specializations!
+
+═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,132 @@
+═══════════════════════════════════════════════════════════════════
+   ⭐ FINAL VERSION - WITH "BACK TO DOCTORS" BUTTON ⭐
+═══════════════════════════════════════════════════════════════════
+
+📦 FILE TO UPLOAD: AWA-WITH-BACK-BUTTON-FINAL.zip
+
+═══════════════════════════════════════════════════════════════════
+✅ NEW FEATURE ADDED:
+═══════════════════════════════════════════════════════════════════
+
+🎉 CERTIFICATE VIEWER WITH BACK BUTTON!
+
+When you click on a certificate now:
+✓ Opens in a beautiful viewer page
+✓ Shows "Back to Doctors" button at the top
+✓ Shows "View All Doctors" button at the bottom
+✓ Shows "Download" button to save certificate
+✓ AWA branding and logo
+✓ Professional design with warm colors
+
+═══════════════════════════════════════════════════════════════════
+✅ ALL PREVIOUS FIXES INCLUDED:
+═══════════════════════════════════════════════════════════════════
+
+✓ Position 7: Mr. Ramesh Suryavanshi (corrected)
+✓ All doctor names match photos
+✓ Navigation shows "Doctors"
+✓ AWA favicon (NO Lovable)
+✓ All 19 certificates working
+✓ .htaccess for routing
+
+═══════════════════════════════════════════════════════════════════
+📋 HOW IT WORKS:
+═══════════════════════════════════════════════════════════════════
+
+BEFORE (Old way):
+- Click certificate → Opens raw file
+- No way to navigate back
+- Just a plain image/PDF
+
+AFTER (New way):
+- Click certificate → Opens in beautiful viewer
+- "Back to Doctors" button at top (orange button)
+- "View All Doctors" button at bottom
+- "Download" button to save certificate
+- Professional AWA-branded page
+- Easy navigation!
+
+═══════════════════════════════════════════════════════════════════
+🚀 UPLOAD STEPS:
+═══════════════════════════════════════════════════════════════════
+
+1. LOGIN TO HOSTINGER
+   → https://hpanel.hostinger.com
+   → File Manager → public_html
+
+2. DELETE OLD FILES
+   → Select ALL files in public_html
+   → Delete everything
+
+3. UPLOAD
+   → Upload: AWA-WITH-BACK-BUTTON-FINAL.zip
+   → Wait for 100%
+
+4. EXTRACT
+   → Right-click the ZIP
+   → Extract to current directory
+
+5. DELETE ZIP
+   → Delete AWA-WITH-BACK-BUTTON-FINAL.zip
+
+6. VERIFY FILES
+   Check that public_html contains:
+   ✓ index.html
+   ✓ certificate-viewer.html ← NEW FILE!
+   ✓ .htaccess
+   ✓ favicon.ico
+   ✓ favicon.png
+   ✓ assets/ folder
+   ✓ certificates/ folder (19 files)
+
+7. CLEAR BROWSER CACHE
+   → Ctrl + Shift + Delete
+   → Clear "Cached images and files"
+
+8. TEST
+   → Visit: https://amodayawellness.com
+   → Go to Doctors page
+   → Click any doctor's "View More"
+   → Click a certificate
+   → See the new viewer with "Back to Doctors" button!
+
+═══════════════════════════════════════════════════════════════════
+✅ WHAT TO TEST:
+═══════════════════════════════════════════════════════════════════
+
+□ Click a certificate → Opens in viewer page
+□ See "Back to Doctors" button at top (orange)
+□ Click "Back to Doctors" → Returns to doctors page
+□ See "View All Doctors" button at bottom
+□ See "Download" button
+□ Certificate displays properly (image or PDF)
+□ AWA logo visible in viewer
+□ All 11 doctor names correct
+□ Mr. Ramesh Suryavanshi in position 7
+
+═══════════════════════════════════════════════════════════════════
+📱 MOBILE FRIENDLY:
+═══════════════════════════════════════════════════════════════════
+
+The certificate viewer is fully responsive:
+✓ Works on phones and tablets
+✓ Buttons stack vertically on small screens
+✓ Certificate scales to fit screen
+✓ Easy to navigate on mobile
+
+═══════════════════════════════════════════════════════════════════
+🎨 DESIGN FEATURES:
+═══════════════════════════════════════════════════════════════════
+
+✓ Warm gradient background (matches AWA theme)
+✓ White certificate frame with shadow
+✓ Orange accent colors (AWA brand)
+✓ Professional typography
+✓ Smooth hover effects
+✓ Clean, modern design
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 Now you can easily navigate back from certificates!
+
+═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,105 @@
+═══════════════════════════════════════════════════════════════════
+   AWA WEBSITE - DOCTOR NAMES & PHOTOS REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+Use this to verify doctor names match their photos on the live site.
+
+═══════════════════════════════════════════════════════════════════
+
+POSITION 1 (member-1.jpg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Bhagyashree Deshpande                                       │
+│ BDS - Bachelor of Dental Surgery                                │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 2 (member-2.jpg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Dimple Thakkar                                              │
+│ Certified Holistic Wellness Practitioner                        │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 3 (member-3.jpeg) ⭐ CORRECTED
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Smita Lodhe                                                 │
+│ Occupational Therapist & Physiotherapist                        │
+│ ⚠️ WAS SHOWING: Dr. Dimple Thakkar (WRONG)                     │
+│ ✅ NOW SHOWING: Dr. Smita Lodhe (CORRECT)                      │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 4 (member-4.jpg) ⭐ CORRECTED
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Samir Prabhudesai                                           │
+│ Low Carb Nutrition & Metabolic Health Specialist                │
+│ ✅ CORRECTED                                                    │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 5 (member-5.jpeg) ⭐ CORRECTED
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Swapnil Bhanushali                                          │
+│ M.D. (Ayurveda) - Ayurveda Vachaspati                          │
+│ ✅ CORRECTED                                                    │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 6 (member-6.jpeg) ⭐ CORRECTED
+┌─────────────────────────────────────────────────────────────────┐
+│ Neelam Kaur (NO "Dr." prefix)                                  │
+│ Certified Holistic Healing & Reiki Practitioner                 │
+│ ⚠️ Note: No "Dr." title for this member                        │
+│ ✅ CORRECTED                                                    │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 7 (member-7.jpeg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Smita Lodhe                                                 │
+│ Occupational Therapist & Physiotherapist                        │
+│ (Same person as Position 3, different photo)                    │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 8 (member-8.jpeg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Ruby Khan                                                   │
+│ Certified Nutrition and Weight Management Advisor               │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 9 (member-9.jpeg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Rupali Shaw                                                 │
+│ Functional Medicine Health Coach & Yoga Teacher                 │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 10 (member-10.jpeg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Samiit Sarode                                               │
+│ Graphic Design Professional                                     │
+└─────────────────────────────────────────────────────────────────┘
+
+POSITION 11 (member-11.jpeg)
+┌─────────────────────────────────────────────────────────────────┐
+│ Dr. Kalyani Patil                                               │
+│ Licensed Emotional Intelligence Coach Practitioner              │
+└─────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+📋 VERIFICATION STEPS:
+═══════════════════════════════════════════════════════════════════
+
+1. Open your website: https://yourdomain.com
+2. Click "Doctors" in the navigation menu
+3. Compare each doctor card with this reference
+4. Verify the name matches the photo
+5. Click "View More" to check certificates
+
+═══════════════════════════════════════════════════════════════════
+⭐ KEY CORRECTIONS MADE:
+═══════════════════════════════════════════════════════════════════
+
+Position 3: Changed from "Dr. Dimple Thakkar" to "Dr. Smita Lodhe"
+Position 4: Corrected to "Dr. Samir Prabhudesai"
+Position 5: Corrected to "Dr. Swapnil Bhanushali"
+Position 6: Corrected to "Neelam Kaur" (no "Dr." prefix)
+
+═══════════════════════════════════════════════════════════════════
+
+✅ All names now correctly match their respective photos!
+
+═══════════════════════════════════════════════════════════════════

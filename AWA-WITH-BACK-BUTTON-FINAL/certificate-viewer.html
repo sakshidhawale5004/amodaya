@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate - AWA</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #FFF5E6 0%, #FFE8CC 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #D97706;
+        }
+        
+        .back-button {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(217, 119, 6, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(217, 119, 6, 0.4);
+        }
+        
+        .back-button:active {
+            transform: translateY(0);
+        }
+        
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .certificate-title {
+            color: #92400E;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .certificate-frame {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            max-width: 100%;
+            max-height: 80vh;
+            overflow: auto;
+        }
+        
+        .certificate-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0.5rem;
+        }
+        
+        .certificate-pdf {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        
+        .actions {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .action-button {
+            background: white;
+            color: #D97706;
+            border: 2px solid #D97706;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .action-button:hover {
+            background: #D97706;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .certificate-title {
+                font-size: 1.25rem;
+            }
+            
+            .back-button, .action-button {
+                padding: 0.625rem 1.25rem;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+            </svg>
+            AWA - Amodaya Wellness Alliance
+        </div>
+        <button class="back-button" onclick="goBack()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back to Doctors
+        </button>
+    </div>
+    
+    <div class="container">
+        <h1 class="certificate-title" id="certificateTitle">Certificate</h1>
+        
+        <div class="certificate-frame" id="certificateFrame">
+            <!-- Certificate content will be loaded here -->
+        </div>
+        
+        <div class="actions">
+            <a href="/members" class="action-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                </svg>
+                View All Doctors
+            </a>
+            <button class="action-button" onclick="downloadCertificate()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/members';
+            }
+        }
+        
+        function downloadCertificate() {
+            const file = getQueryParam('file');
+            if (file) {
+                const link = document.createElement('a');
+                link.href = file;
+                link.download = file.split('/').pop();
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+        
+        // Load certificate
+        window.addEventListener('DOMContentLoaded', function() {
+            const file = getQueryParam('file');
+            const title = getQueryParam('title') || 'Certificate';
+            
+            document.getElementById('certificateTitle').textContent = decodeURIComponent(title);
+            
+            if (file) {
+                const frame = document.getElementById('certificateFrame');
+                const extension = file.split('.').pop().toLowerCase();
+                
+                if (extension === 'pdf') {
+                    frame.innerHTML = `<iframe src="${file}" class="certificate-pdf" title="Certificate PDF"></iframe>`;
+                } else {
+                    frame.innerHTML = `<img src="${file}" alt="Certificate" class="certificate-image">`;
+                }
+            } else {
+                document.getElementById('certificateFrame').innerHTML = '<p style="color: #92400E; text-align: center;">Certificate not found</p>';
+            }
+        });
+    </script>
+</body>
+</html>

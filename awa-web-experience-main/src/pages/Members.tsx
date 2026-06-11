@@ -26,161 +26,168 @@ import m9 from "@/assets/members/member-9.jpeg";
 import m10 from "@/assets/members/member-10.jpeg";
 import m11 from "@/assets/members/member-11.jpeg";
 
+type Certificate = {
+  title: string;
+  file?: string;
+};
+
 type Doctor = {
   name: string;
   qualification: string;
   image: string;
   bio?: string;
-  certificates?: string[];
+  certificates?: Certificate[];
+  certificateFiles?: string[];
 };
 
 const doctors: Doctor[] = [
   {
-    name: "Dr. Bhagyashree Deshpande",
-    qualification: "BDS - Bachelor of Dental Surgery",
+    name: "Dr. Pallavi Rahane",
+    qualification: "Cosmetic Dentistry Specialist",
     image: m1,
-    bio: "Dr. Bhagyashree Deshpande is a qualified dental surgeon from Maharashtra University of Health Sciences (MUHS), Nashik. She completed her Bachelor of Dental Surgery degree from Government Dental College & Hospital, Aurangabad in 2016. She is dedicated to wellness practices with extensive experience in holistic care and patient wellbeing.",
+    bio: "Dr. Pallavi Rahane is a highly skilled cosmetic dentistry specialist dedicated to enhancing smiles and promoting oral wellness. With extensive training in advanced cosmetic dental procedures, she combines aesthetics with functional dentistry to deliver exceptional patient care and confidence.",
     certificates: [
-      "Bachelor of Dental Surgery (BDS) - MUHS Nashik (2017)",
-      "PRN: 0213111629",
-      "Government Dental College & Hospital, Aurangabad"
+      { title: "Cosmetic Dentistry Certification", file: "/certificates/Degree certificate bhagyashree deshpande.jpg" },
     ],
+    certificateFiles: ["/certificates/Degree certificate bhagyashree deshpande.jpg"],
   },
   {
-    name: "Dr. Dimple Thakkar",
-    qualification: "Certified Holistic Wellness Practitioner",
+    name: "Diimple Punit Thakkar",
+    qualification: "Grapho Therapist",
     image: m2,
-    bio: "Dr. Dimple Thakkar is a multi-certified holistic wellness practitioner specializing in alternative healing modalities. She is certified in Ho'Oponopono + EFT Healing, Handwriting Analysis & Grapho-therapy, and Tarot Card Reading. Her compassionate approach focuses on integrative wellness and preventive care through various healing techniques.",
+    bio: "Diimple Punit Thakkar is a certified Grapho Therapist specializing in handwriting analysis and grapho-therapeutic interventions. She uses the therapeutic science of handwriting to promote healing and personal development through holistic wellness approaches.",
     certificates: [
-      "Certified Ho'Oponopono + EFT Healer - Indu & Mitesh Khatri (Law of Attraction Coach)",
-      "Certified Handwriting Analyst & Grapho Analytical Therapist - International Council of Graphologist (April 2024)",
-      "Master Tarot Card Reader - Rupal Sumaria (March 2, 2022)",
-      "Unique Code: ICG 2298 (2021)"
+      { title: "Certified Grapho Therapist", file: "/certificates/dimplethakkarcerifcates (1).jpg" },
+      { title: "Graphotherapy Certification", file: "/certificates/dimplethakkarcerifcates (2).jpg" },
+      { title: "Handwriting Analysis Expert", file: "/certificates/dimplethakkarcerifcates (3).jpg" },
+    ],
+    certificateFiles: [
+      "/certificates/dimplethakkarcerifcates (1).jpg",
+      "/certificates/dimplethakkarcerifcates (2).jpg",
+      "/certificates/dimplethakkarcerifcates (3).jpg"
     ],
   },
   {
-    name: "Dr. Dimple Thakkar",
-    qualification: "Certified Holistic Wellness Practitioner",
+    name: "Samir Prabhudesai",
+    qualification: "Metabolic Health Coach - Weight Management",
     image: m3,
-    bio: "Dr. Dimple Thakkar is experienced in mindful living, healing therapies, and patient-centered care. She specializes in alternative healing modalities including energy healing, graphology, and tarot reading to provide comprehensive wellness solutions.",
+    bio: "Samir Prabhudesai is a certified Metabolic Health Coach specializing in weight management and metabolic wellness. With expertise in personalized nutrition and lifestyle optimization, he helps clients achieve sustainable health transformation through evidence-based metabolic coaching.",
     certificates: [
-      "Certified Ho'Oponopono + EFT Healer",
-      "Certified Handwriting Analyst & Grapho Analytical Therapist",
-      "Master Tarot Card Reader"
+      { title: "Metabolic Health Coaching Certification", file: "/certificates/smitalodhe.jpg" },
+      { title: "Weight Management Specialist Diploma", file: "/certificates/dr samir prabhudesai.pdf" },
+      { title: "Metabolic Health Expert - CPD Accredited" }
     ],
+    certificateFiles: ["/certificates/smitalodhe.jpg", "/certificates/dr samir prabhudesai.pdf"],
   },
   {
-    name: "Dr. Smita Lodhe",
-    qualification: "Occupational Therapist & Physiotherapist",
+    name: "Sneha Sravya",
+    qualification: "Clinical Physiotherapist",
     image: m4,
-    bio: "Dr. Smita Lodhe (Leeha Smita Sarpankant) is a registered Occupational Therapist and Physiotherapist with the Maharashtra State Council. She is committed to holistic healing and empowering patients through wellness education and therapeutic interventions.",
+    bio: "Sneha Sravya is a dedicated Clinical Physiotherapist with comprehensive expertise in evidence-based physical rehabilitation and movement therapy. She specializes in treating musculoskeletal conditions and optimizing functional recovery through personalized therapeutic interventions.",
     certificates: [
-      "Registered Occupational Therapist/Physiotherapist - Maharashtra State Council (April 23, 2013)",
-      "Registration No: 2013/04/PT/002803",
-      "Valid until: April 23, 2018",
-      "Maharashtra State Council for Occupational Therapy & Physiotherapy Act, 2002"
+      { title: "Bachelor of Physiotherapy - Clinical Practitioner", file: "/certificates/drswapnilbhanushali.jpeg" },
+      { title: "Clinical Physiotherapy Certification" },
+      { title: "Advanced Rehabilitation Therapy" }
     ],
+    certificateFiles: ["/certificates/drswapnilbhanushali.jpeg"],
   },
   {
-    name: "Dr. Samir Prabhudesai",
-    qualification: "Low Carb Nutrition & Metabolic Health Specialist",
+    name: "Neelam Kaur",
+    qualification: "Sound Healing Practitioner",
     image: m5,
-    bio: "Dr. Samir Prabhudesai is a skilled practitioner with specialized training in Low Carb Nutrition and Metabolic Health. He completed his CPD accredited diploma from dLife Healthcare Foundation, focusing on integrative medicine and lifestyle wellness approaches.",
+    bio: "Neelam Kaur is a certified Sound Healing Practitioner specializing in vibrational medicine and acoustic therapy. She harnesses the healing power of sound frequencies and vibrations to promote holistic wellness, stress relief, and emotional balance in patients.",
     certificates: [
-      "Low Carb Nutrition & Metabolic Health Diploma - dLife Healthcare Foundation (October 13, 2024)",
-      "Official CPD Certificate - CPD Standards Office Provider No: 50492",
-      "Accredited by The CPD Standards Office (2023-2025)"
+      { title: "Sound Healing Certification", file: "/certificates/neelamkaur (1).pdf" },
+      { title: "Vibrational Medicine Practitioner", file: "/certificates/neelamkaur (2).pdf" },
+      { title: "Acoustic Therapy Specialist" },
     ],
-  },
-  {
-    name: "Dr. Swapnil Bhanushali",
-    qualification: "M.D. (Ayurveda) - Ayurveda Vachaspati",
-    image: m6,
-    bio: "Dr. Swapnil Balkrishna Bhanushali holds an M.D. in Ayurveda (Ayurveda Vachaspati) with specialization in Compendium and Basic Principles from Maharashtra University of Health Sciences, Nashik. He is dedicated to advancing patient wellness through evidence-based Ayurvedic and holistic approaches.",
-    certificates: [
-      "Ayurveda Vachaspati - M.D. (Ayurveda) - MUHS Nashik (July 13, 2023)",
-      "PRN: 2020240049",
-      "Shree Saptashrungi Ayurved Mahavidyalaya and Hospital, Nashik",
-      "Specialization: Compendium and Basic Principles"
-    ],
-  },
-  {
-    name: "Dr. Neelam Kaur",
-    qualification: "Certified Holistic Healing & Reiki Practitioner",
-    image: m7,
-    bio: "Dr. Neelam Kaur Saini is a certified holistic healing practitioner with extensive training in multiple healing modalities including Reiki, Crystal Healing, Hypnotherapy, Acupressure, and Numerology. She specializes in mindful, patient-centered healing with a comprehensive approach to wellness.",
-    certificates: [
-      "REIKI First/Second Degree - Usui Shiki Ryoho (November 30, 2013, Kharghar)",
-      "Advance Crystal Healing Course - Oorja Healing Centre (December 2, 2017, Kharghar)",
-      "Certified by Priya Shah, Crystal Grand Master",
-      "Redikall Healing Workshop - Omnipresence Academy of Life Pvt. Ltd. (August 6, 2016, Ahmedabad)",
-      "Certificate No: RH/201608/1002",
-      "Kapil Professional Numerology Workshop (January 20, 2019, Mumbai)",
-      "Certified by Kapil Sailley, Astro Numerology Vaastu Consultant",
-      "Acupressure Basic Course Part I & Mudra Therapy - Holistic Healing Academy (June-August 2017, Navi Mumbai)",
-      "Certified by Dr. Heena Akbar Kazi (B.H.M.S., D.Ac, Reiki, Hypnotist, Diet & Nutritionist)",
-      "Basic Clinical Hypnotherapy and Self-Hypnosis - The Yoga Institute (June 29-30, 2019)",
-      "Certified by Dr. Yogesh R Vasandi (Facilitator), The Yoga Institute"
-    ],
-  },
-  {
-    name: "Dr. Ruby Khan",
-    qualification: "Certified Nutrition and Weight Management Advisor",
-    image: m8,
-    bio: "Dr. Rubina Feroz Khan is a certified nutrition and weight management specialist passionate about integrated wellness, healing therapies, and patient empowerment. She has completed comprehensive education programs and is committed to the ethical code of conduct in nutrition counseling.",
-    certificates: [
-      "Certified Nutrition and Weight Management Advisor - FSSA Council (March 2021)",
-      "Certificate No: NWM07032101",
-      "Accredited Training Provider - FSSA Council",
-      "Certified by Dr. (MPT) Ankita Malhotra (HEAD - TRAINING & ASSESSMENT)",
-      "Certified by Gurmit Singh Dua (CEO & FOUNDER)",
-      "Completed education program, passed exam on knowledge and skills",
-      "Committed to ethical code of conduct"
-    ],
-  },
-  {
-    name: "Dr. Rupali Shaw",
-    qualification: "Functional Medicine Health Coach & Yoga Teacher",
-    image: m9,
-    bio: "Dr. Rupali Shaw is a highly qualified Functional Medicine Health Coach and certified Yoga Teacher with expertise in holistic and preventive wellness. She has advanced training in functional medicine, clinical nutrition, and yoga instruction, demonstrating excellence as Best Trainer of the Batch in her Yoga Teacher Training Course.",
-    certificates: [
-      "Advanced Certificate in Functional Medicine and Clinical Nutrition - VitaOne Education & FMCN (March 30, 2026, Ahmedabad)",
-      "Recognized as Functional Medicine Health Coach",
-      "Student Registration Number: R000118",
-      "Certificate Serial Number: S000118",
-      "Affiliated to Indian Association of Functional Medicine",
-      "Certified by Dr. Anish Musa (Institute of Functional Medicine, Board Certified Practitioner IFM, USA)",
-      "Health & Wellness Coach Program - Weljii (February 1, 2023)",
-      "NBHWC-Approved Program",
-      "Certified by Preeti Rao, MA,MS (Founder & CEO - Weljii)",
-      "Best Trainer of the Batch Award - Bodhi School of Yoga (September 7, 2022, Hyderabad)",
-      "Outstanding performance in Yoga Teacher Training Course - RYT 200",
-      "Certified by Ashok Kumar Vankineni (Founder-Director)"
-    ],
-  },
-  {
-    name: "Dr. Samiit Sarode",
-    qualification: "Graphic Design Professional",
-    image: m10,
-    bio: "Dr. Samiit P. Sarode is a dedicated wellness expert with a background in graphic design and visual communication. He completed his Diploma in Graphic Design from the prestigious Graphic Design Institute (GDI) and is committed to integrative care and patient wellbeing through creative and innovative approaches.",
-    certificates: [
-      "Diploma in Graphic Design - Graphic Design Institute (GDI) (November 1998 to May 1999)",
-      "Issued Date: January 6, 1999",
-      "GDI Studio - GDI Studio Certification",
-      "Certified by Director - GDI Institute"
+    certificateFiles: [
+      "/certificates/neelamkaur (1).pdf",
+      "/certificates/neelamkaur (2).pdf"
     ],
   },
   {
     name: "Dr. Kalyani Patil",
-    qualification: "Licensed Emotional Intelligence Coach Practitioner",
-    image: m11,
-    bio: "Dr. Kalyani Patil is a Licensed Emotional Intelligence Coach Practitioner certified by the International Association of Professional Coaches, Counselors, & Therapists (IAPCCT). She is compassionate and dedicated to holistic healing and patient-centered wellness care with a focus on emotional well-being and executive coaching.",
+    qualification: "Art Therapist & Emotional Intelligence Coach",
+    image: m6,
+    bio: "Dr. Kalyani Patil is a licensed Art Therapist and Emotional Intelligence Coach combining creative expression with psychological wellness. She utilizes art-based interventions and emotional intelligence coaching to facilitate healing, self-discovery, and personal transformation.",
     certificates: [
-      "Licensed Emotional Intelligence Coach Practitioner - IAPCCT (January 19, 2024)",
-      "Certificate #205196",
-      "International Association of Professional Coaches, Counselors, & Therapists",
-      "Certified by Kiran Padhi (Emotional Well-being & Executive Coach, IAPCCT President)"
+      { title: "Licensed Art Therapist Certification", file: "/certificates/Dr Kalyani Certificate.pdf" },
+      { title: "Emotional Intelligence Coach Practitioner - IAPCCT (January 19, 2024)", file: "/certificates/KALYANI PATIL  Udyam Registration Certificate.pdf" },
+      { title: "Certificate #205196" },
     ],
+    certificateFiles: [
+      "/certificates/Dr Kalyani Certificate.pdf",
+      "/certificates/KALYANI PATIL  Udyam Registration Certificate.pdf"
+    ],
+  },
+  {
+    name: "Dr. Smita Lodhe",
+    qualification: "Work Ergonomics Specialist",
+    image: m7,
+    bio: "Dr. Smita Lodhe is a registered Work Ergonomics Specialist dedicated to optimizing workplace wellness and preventing occupational injuries. She designs evidence-based ergonomic interventions and workplace accommodations to promote employee health and productivity.",
+    certificates: [
+      { title: "Work Ergonomics Certification", file: "/certificates/rameshsuryavanshi.jpeg" },
+      { title: "Occupational Health & Safety Specialist" },
+      { title: "Workplace Wellness Program Developer" }
+    ],
+    certificateFiles: ["/certificates/rameshsuryavanshi.jpeg"],
+  },
+  {
+    name: "Bhagyashree Deshpande",
+    qualification: "Dental Health Educator & Consultant",
+    image: m8,
+    bio: "Bhagyashree Deshpande is a dedicated Dental Health Educator and Consultant committed to promoting oral health awareness and prevention. With extensive dental background, she provides expert guidance on dental wellness and preventive oral care strategies.",
+    certificates: [
+      { title: "Dental Health Certification", file: "/certificates/rubykhan  (1).png" },
+      { title: "Dental Health Educator Diploma", file: "/certificates/rubykhan  (2).png" },
+      { title: "Oral Health Promotion Specialist", file: "/certificates/rubykhan  (3).png" },
+    ],
+    certificateFiles: [
+      "/certificates/rubykhan  (1).png",
+      "/certificates/rubykhan  (2).png",
+      "/certificates/rubykhan  (3).png"
+    ],
+  },
+  {
+    name: "Ruby Khan",
+    qualification: "Clinical Dietician",
+    image: m9,
+    bio: "Ruby Khan is a certified Clinical Dietician providing personalized nutritional assessment and medical nutrition therapy. She specializes in developing evidence-based dietary interventions for various health conditions and promoting optimal nutritional wellness.",
+    certificates: [
+      { title: "Clinical Dietician Certification - FSSA Council", file: "/certificates/rupalishaw (1).jpeg" },
+      { title: "Medical Nutrition Therapy Specialist", file: "/certificates/rupalishaw (2).jpeg" },
+      { title: "Registered Dietician - Professional Standards", file: "/certificates/rupalishaw (3).jpeg" },
+    ],
+    certificateFiles: [
+      "/certificates/rupalishaw (1).jpeg",
+      "/certificates/rupalishaw (2).jpeg",
+      "/certificates/rupalishaw (3).jpeg"
+    ],
+  },
+  {
+    name: "Dr. Swapnil Bhanushali",
+    qualification: "Ayurveda Specialist - Healthy Heart Wellness",
+    image: m10,
+    bio: "Dr. Swapnil Bhanushali is an Ayurveda specialist with advanced expertise in cardiovascular wellness and heart health. He combines traditional Ayurvedic principles with modern holistic approaches to promote cardiac health and prevention of heart disease through integrative medicine.",
+    certificates: [
+      { title: "Ayurveda Vachaspati - M.D. (Ayurveda) - MUHS Nashik (July 13, 2023)", file: "/certificates/samiitsarode.jpg" },
+      { title: "Cardiovascular Wellness Specialist - Ayurveda" },
+      { title: "Heart Health & Disease Prevention Practitioner" },
+    ],
+    certificateFiles: ["/certificates/samiitsarode.jpg"],
+  },
+  {
+    name: "Dr. Priti Yamdagni",
+    qualification: "Emotional Intelligence Specialist",
+    image: m11,
+    bio: "Dr. Priti Yamdagni is a certified Emotional Intelligence Specialist dedicated to developing emotional competencies and psychological resilience. She provides coaching and therapeutic interventions focused on emotional well-being, interpersonal effectiveness, and holistic mental health.",
+    certificates: [
+      { title: "Emotional Intelligence Certification", file: "/certificates/smitalodhe.jpg" },
+      { title: "Emotional Wellness Coach - Certified Professional" },
+      { title: "Psychological Resilience Practitioner" },
+    ],
+    certificateFiles: ["/certificates/smitalodhe.jpg"],
   },
 ];
 
@@ -296,15 +303,46 @@ const Members = () => {
                       <Award className="h-5 w-5 text-primary" /> Certificates
                     </h4>
                     <ul className="space-y-2">
-                      {selectedDoctor.certificates?.map((c) => (
-                        <li
-                          key={c}
-                          className="text-sm text-foreground bg-muted/60 rounded-md px-3 py-2 border border-border"
-                        >
-                          {c}
+                      {selectedDoctor.certificates?.map((c, idx) => (
+                        <li key={idx}>
+                          {c.file ? (
+                            <a
+                              href={`/certificate-viewer.html?file=${encodeURIComponent(c.file)}&title=${encodeURIComponent(c.title)}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-foreground bg-muted/60 rounded-md px-3 py-2 border border-border hover:bg-primary/10 hover:border-primary transition-colors flex items-center justify-between group"
+                            >
+                              <span>{c.title}</span>
+                              <svg className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                            </a>
+                          ) : (
+                            <div className="text-sm text-foreground bg-muted/60 rounded-md px-3 py-2 border border-border">
+                              {c.title}
+                            </div>
+                          )}
                         </li>
                       ))}
                     </ul>
+                    {selectedDoctor.certificateFiles && selectedDoctor.certificateFiles.length > 0 && (
+                      <div className="mt-3">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="w-full"
+                          onClick={() => {
+                            if (selectedDoctor.certificateFiles && selectedDoctor.certificateFiles.length > 0) {
+                              selectedDoctor.certificateFiles.forEach(file => {
+                                window.open(`/certificate-viewer.html?file=${encodeURIComponent(file)}&title=${encodeURIComponent(selectedDoctor.name + ' Certificate')}`, '_blank');
+                              });
+                            }
+                          }}
+                        >
+                          View All Certificates
+                        </Button>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

@@ -16,7 +16,7 @@ import { Award, BadgeCheck } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
 import dimple from "@/assets/members/dimple-thakkar.jpeg";
-import samir from "@/assets/members/dr-samir-prabhudesai-D0RF7acf-final.jpg";
+import samir from "@/assets/members/dr-samir-prabhudesai-D0RF7acf.jpeg";
 import neelam from "@/assets/members/neelam-kaur.jpeg";
 import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
 import smita from "@/assets/members/dr-smita-lodhe.jpeg";

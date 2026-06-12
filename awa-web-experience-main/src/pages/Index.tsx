@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Users, Handshake, BookOpen, Building2, Heart, Leaf, Shield, Calendar, Sparkles } from "lucide-react";
+import { ArrowRight, BrainCircuit, Activity, Users, Battery, Star, Quote, ChevronRight, Leaf, ShieldAlert, HeartHandshake, PhoneOff, Sun, Flame, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContactButton from "@/components/FloatingContactButton";
-import { MembershipFormDialog } from "@/components/MembershipFormDialog";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.jpg"; // Re-using existing heroBg if possible, or it might be missing. We'll find out.
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -15,159 +13,125 @@ const fadeUp = {
 };
 
 const Index = () => {
-  const [formOpen, setFormOpen] = useState(false);
-
-  const philosophyItems = [
-    { icon: Handshake, title: "Collaboration over Competition", desc: "Members help each other grow their wellness practice through mutual support, shared resources, and collaborative opportunities." },
-    { icon: Shield, title: "Integrity & Credibility", desc: "Only qualified and ethical professionals are allowed into the trusted network." },
-    { icon: Heart, title: "Contribution to Society", desc: "Promoting holistic health and preventive healthcare for communities across India." },
-  ];
-
-  const whyJoinItems = [
-    { icon: Users, title: "Professional Networking", desc: "Connect with other wellness experts and build meaningful professional relationships together." },
-    { icon: Sparkles, title: "Business Referrals", desc: "Receive and give referrals within the trusted AWA professional network." },
-    { icon: Calendar, title: "Collaborative Programs", desc: "Participate in retreats, workshops, and wellness programs with fellow members." },
-    { icon: BookOpen, title: "Knowledge Sharing", desc: "Learn from experts through presentations, discussions, and curated wellness events." },
-    { icon: Building2, title: "Corporate Opportunities", desc: "Access corporate wellness projects and collaborative programs with fellow members." },
-  ];
-
-  const whoCanJoin = [
-    "Yoga Trainers", "Ayurvedic Doctors", "Nutritionists & Dieticians", "Physiotherapists",
-    "Psychologists & Mental Health Experts", "Meditation Teachers", "Naturopaths", "Fitness Trainers",
-    "Wellness Coaches", "Panchakarma Specialists", "Wellness Resort Operators", "Corporate Wellness Trainers",
-  ];
-
-  const activities = [
-    "Monthly networking meetings", "Wellness workshops and seminars", "Corporate wellness programs",
-    "Wellness retreats", "Collaborative wellness events", "Community wellness initiatives",
-  ];
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FDFBF7]">
       <Navbar />
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-hero" />
+          <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2070&auto=format&fit=crop" alt="Serene Yoga Landscape" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FDFBF7] via-transparent to-transparent" />
         </div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <motion.p
-            initial="hidden" animate="visible" variants={fadeUp}
-            className="text-secondary font-body font-semibold tracking-widest uppercase text-sm mb-4"
-          >
-            Connecting Wellness Experts
-          </motion.p>
+        
+        <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center mt-[-10vh]">
           <motion.h1
-            initial="hidden" animate="visible" custom={1} variants={fadeUp}
-            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight max-w-4xl mx-auto mb-6"
+            initial="hidden" animate="visible" variants={fadeUp}
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight max-w-5xl mx-auto mb-6 drop-shadow-lg"
           >
-            India's First Professional Wellness Network for Health Experts
+            Transform <br/>
+            <span className="text-white">Stress Into Strength</span>
           </motion.h1>
           <motion.p
-            initial="hidden" animate="visible" custom={2} variants={fadeUp}
-            className="text-primary-foreground/80 font-body text-lg md:text-xl max-w-2xl mx-auto mb-10"
+            initial="hidden" animate="visible" custom={1} variants={fadeUp}
+            className="text-white/95 font-body text-lg md:text-xl max-w-3xl mx-auto mb-10 drop-shadow-md font-medium"
           >
-            Amodaya Wellness Alliance (AWA) connects wellness professionals to collaborate, share knowledge, grow their businesses, and create holistic health solutions for communities.
+            Corporate Wellness Retreats, Stress Management Programs & Wellness Tourism Experiences for Modern Professionals & Organizations.
           </motion.p>
-          <motion.div initial="hidden" animate="visible" custom={3} variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
-            <Button variant="hero" size="lg" onClick={() => setFormOpen(true)}>Join AWA</Button>
-            <Button variant="hero-outline" size="lg" asChild>
-              <Link to="/about">About AWA</Link>
+          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="flex flex-wrap gap-4 justify-center mb-16">
+            <Button className="bg-deep-green hover:bg-deep-green/90 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center gap-2">
+              Book A Corporate Retreat <ArrowRight className="h-5 w-5" />
+            </Button>
+            <Button className="bg-[#EADBC8] hover:bg-[#D5C2AA] text-deep-green rounded-full px-8 py-6 text-lg font-semibold flex items-center gap-2">
+              Explore Programs <ChevronRight className="h-5 w-5" />
             </Button>
           </motion.div>
-        </div>
-      </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-warm">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
-            About AWA
-          </motion.h2>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
-            className="space-y-4 text-muted-foreground font-body leading-relaxed text-lg">
-            <p>Amodaya Wellness Alliance (AWA) is a professional community of wellness experts committed to promoting holistic health and collaborative professional growth.</p>
-            <p>The alliance brings together professionals from various wellness disciplines including yoga, Ayurveda, nutrition, mental health, physiotherapy, and holistic therapies to create an integrated wellness ecosystem in India.</p>
-            <p>Through structured networking, knowledge exchange, and collaborative programs, AWA empowers wellness professionals to grow their practice while improving overall community health outcomes.</p>
+          {/* Feature Bar */}
+          <motion.div initial="hidden" animate="visible" custom={3} variants={fadeUp} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-xl w-full max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-x divide-border/50">
+              <div className="flex items-center gap-3 justify-center px-4">
+                <BrainCircuit className="h-8 w-8 text-deep-green" />
+                <span className="font-semibold text-sm text-left leading-tight">Reduce Stress <br/>& Burnout</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center px-4">
+                <Activity className="h-8 w-8 text-deep-green" />
+                <span className="font-semibold text-sm text-left leading-tight">Boost Productivity <br/>& Focus</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center px-4">
+                <Users className="h-8 w-8 text-deep-green" />
+                <span className="font-semibold text-sm text-left leading-tight">Stronger Teams <br/>Better Bonding</span>
+              </div>
+              <div className="flex items-center gap-3 justify-center px-4">
+                <Battery className="h-8 w-8 text-deep-green" />
+                <span className="font-semibold text-sm text-left leading-tight">Work-Life <br/>Balance</span>
+              </div>
+            </div>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2} variants={fadeUp}
-              className="bg-card rounded-lg p-8 shadow-card border border-border">
-              <Leaf className="h-8 w-8 text-primary mx-auto mb-4" />
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">Our Vision</h3>
-              <p className="text-muted-foreground font-body">To build India's most trusted network of wellness professionals collaborating for holistic health, referrals, and sustained business growth.</p>
-            </motion.div>
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3} variants={fadeUp}
-              className="bg-card rounded-lg p-8 shadow-card border border-border">
-              <Heart className="h-8 w-8 text-secondary mx-auto mb-4" />
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">Our Mission</h3>
-              <p className="text-muted-foreground font-body">To create a structured community where wellness experts connect, collaborate, and grow together while delivering integrated wellness solutions across India.</p>
-            </motion.div>
-          </div>
         </div>
       </section>
 
-      {/* Philosophy */}
-      <section className="py-20 bg-background">
+      {/* Where Wellness Meets Performance */}
+      <section id="about" className="py-24 bg-[#FDFBF7]">
         <div className="container mx-auto px-4">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-            AWA Philosophy
-          </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {philosophyItems.map((item, i) => (
-              <motion.div key={item.title} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
-                className="text-center p-8 rounded-lg bg-card border border-border shadow-card hover:shadow-warm transition-shadow">
-                <item.icon className="h-10 w-10 text-primary mx-auto mb-4" />
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2" style={{ textWrap: 'balance' }}>{item.title}</h3>
-                <p className="text-muted-foreground font-body text-sm" style={{ textWrap: 'balance' }}>{item.desc}</p>
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div className="lg:w-1/3">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+                <h2 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 uppercase tracking-wide leading-tight">
+                  Where Wellness Meets Performance
+                </h2>
+                <div className="w-16 h-1 bg-warm-gold mb-6"></div>
+                <p className="text-muted-foreground font-body text-lg leading-relaxed">
+                  At Amodaya Wellness, we help individuals, leaders & teams recharge, reconnect and return with renewed energy, clarity and purpose.
+                </p>
               </motion.div>
-            ))}
+            </div>
+            <div className="lg:w-2/3">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp} className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Corporate Team" className="w-full h-48 md:h-64 object-cover rounded-xl shadow-md" />
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2070&auto=format&fit=crop" alt="Yoga Outdoors" className="w-full h-48 md:h-64 object-cover rounded-xl shadow-md" />
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop" alt="Team Bonding" className="w-full h-48 md:h-64 object-cover rounded-xl shadow-md" />
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2062&auto=format&fit=crop" alt="Meditation" className="w-full h-48 md:h-64 object-cover rounded-xl shadow-md" />
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Who Can Join */}
-      <section className="py-20 bg-gradient-warm">
-        <div className="container mx-auto px-4 text-center">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-12">
-            Who Can Join AWA
-          </motion.h2>
-          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto mb-6">
-            {whoCanJoin.map((role, i) => (
-              <motion.span key={role} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i * 0.5} variants={fadeUp}
-                className="bg-card border border-border text-foreground font-body text-sm px-5 py-2.5 rounded-full shadow-card hover:shadow-warm hover:border-primary/30 transition-all">
-                {role}
-              </motion.span>
-            ))}
-          </div>
-          <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={7} variants={fadeUp}
-            className="font-display text-lg md:text-xl font-bold text-foreground">
-            All Wellness Professionals
-          </motion.p>
-        </div>
-      </section>
-
-      {/* Why Join AWA */}
-      <section className="py-20 bg-background">
+      {/* Corporate Wellness Programs */}
+      <section id="corporate" className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-            Why Join AWA
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {whyJoinItems.map((item, i) => (
-              <motion.div key={item.title} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
-                className="flex gap-4 p-6 rounded-lg bg-card border border-border shadow-card hover:shadow-warm transition-shadow">
-                <item.icon className="h-8 w-8 text-secondary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground font-body text-sm">{item.desc}</p>
+          <div className="flex items-center justify-center gap-4 mb-16">
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+              className="font-display text-3xl md:text-4xl font-bold text-foreground text-center uppercase tracking-wider">
+              Corporate Wellness Programs
+            </motion.h2>
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+            {[
+              { title: "Executive Wellness Retreats", desc: "For founders, CXOs & senior leaders", icon: Users, img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Employee Wellness Retreats", desc: "Reduce burnout & improve employee wellbeing", icon: HeartHandshake, img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop" },
+              { title: "Team Rejuvenation Retreats", desc: "Build stronger teams through wellness", icon: Users, img: "https://images.unsplash.com/photo-1517242027094-631f8c218a0f?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Leadership Wellness Programs", desc: "Enhance clarity, resilience & decision making", icon: Star, img: "https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Stress Management Programs", desc: "Practical tools to manage stress effectively", icon: BrainCircuit, img: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Digital Detox Retreats", desc: "Disconnect to reconnect with yourself", icon: PhoneOff, img: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=2119&auto=format&fit=crop" },
+              { title: "Mindfulness & Productivity", desc: "Improve focus, creativity & performance", icon: Activity, img: "https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?q=80&w=2070&auto=format&fit=crop" },
+            ].map((program, i) => (
+              <motion.div key={program.title} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
+                className="bg-white border border-border/50 rounded-xl overflow-hidden shadow-card hover:shadow-xl transition-all flex flex-col group">
+                <div className="p-6 flex flex-col items-center text-center flex-grow">
+                  <div className="w-16 h-16 rounded-full bg-[#FDFBF7] border border-border flex items-center justify-center mb-4 group-hover:bg-deep-green group-hover:text-white transition-colors">
+                    <program.icon className="h-8 w-8 text-deep-green group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="font-display font-bold text-lg mb-2 leading-tight">{program.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{program.desc}</p>
+                </div>
+                <div className="h-40 w-full overflow-hidden">
+                  <img src={program.img} alt={program.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
               </motion.div>
             ))}
@@ -175,47 +139,204 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Activities */}
-      <section className="py-20 bg-gradient-warm">
+      {/* Wellness Tourism Experiences */}
+      <section id="tourism" className="py-24 bg-[#FDFBF7]">
         <div className="container mx-auto px-4">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-            AWA Activities
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {activities.map((activity, i) => (
-              <motion.div key={activity} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
-                className="flex items-center gap-3 bg-card border border-border rounded-lg p-5 shadow-card">
-                <Calendar className="h-5 w-5 text-primary shrink-0" />
-                <span className="font-body text-foreground">{activity}</span>
+          <div className="flex items-center justify-center gap-4 mb-16">
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+              className="font-display text-3xl md:text-4xl font-bold text-foreground text-center uppercase tracking-wider">
+              Wellness Tourism Experiences
+            </motion.h2>
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+            {[
+              { title: "Yoga Retreats", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop" },
+              { title: "Ayurveda Experiences", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Meditation Retreats", img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2062&auto=format&fit=crop" },
+              { title: "Nature Healing Programs", img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop" },
+              { title: "Detox Retreats", img: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?q=80&w=1974&auto=format&fit=crop" },
+              { title: "Weekend Wellness Escapes", img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Spiritual Wellness Journeys", img: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=1964&auto=format&fit=crop" },
+              { title: "Luxury Wellness Holidays", img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" },
+            ].map((exp, i) => (
+              <motion.div key={exp.title} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
+                className="relative h-64 md:h-80 rounded-xl overflow-hidden group cursor-pointer shadow-md">
+                <img src={exp.img} alt={exp.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+                  <h3 className="text-white font-bold text-sm md:text-base leading-tight drop-shadow-md">{exp.title}</h3>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-gradient-cta">
+      {/* Why Organizations Choose Amodaya */}
+      <section className="py-24 bg-white border-y border-border/40">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center gap-4 mb-16">
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+            <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+              className="font-display text-2xl md:text-3xl font-bold text-foreground text-center uppercase tracking-wider">
+              Why Organizations Choose Amodaya
+            </motion.h2>
+            <div className="h-px bg-warm-gold w-16 md:w-32"></div>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+            {[
+              { title: "Reduce Stress & Burnout", icon: BrainCircuit },
+              { title: "Improve Productivity", icon: Activity },
+              { title: "Employee Engagement", icon: Users },
+              { title: "Stronger Team Bonding", icon: HeartHandshake },
+              { title: "Boost Creativity & Innovation", icon: Sparkles },
+              { title: "Better Leadership Effectiveness", icon: Star },
+              { title: "Promote Mental Wellbeing", icon: Leaf },
+              { title: "Work-Life Balance", icon: Battery },
+            ].map((item, i) => (
+              <motion.div key={item.title} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i * 0.5} variants={fadeUp}
+                className="flex flex-col items-center text-center w-28 md:w-36 group">
+                <div className="w-16 h-16 rounded-full bg-[#FDFBF7] border border-border/60 flex items-center justify-center mb-4 shadow-sm group-hover:shadow-md group-hover:border-warm-gold transition-all">
+                  <item.icon className="h-8 w-8 text-deep-green group-hover:scale-110 transition-transform" />
+                </div>
+                <span className="font-semibold text-sm leading-snug">{item.title}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Journey & Testimonials */}
+      <section id="testimonials" className="py-24 bg-[#FDFBF7]">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Journey */}
+            <div>
+              <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+                className="font-display text-3xl font-bold text-foreground mb-12 uppercase tracking-wide text-center lg:text-left">
+                A Transformational Retreat Journey
+              </motion.h2>
+              
+              <div className="relative border-t-2 border-dashed border-deep-green/30 mt-20 pt-8 pb-12 mb-8 hidden md:block">
+                <div className="absolute top-[-1.5rem] left-0 right-0 flex justify-between">
+                  {[
+                    { step: "Arrival", sub: "Warm Welcome", icon: Users },
+                    { step: "Relax", sub: "Unwind & Refresh", icon: Battery },
+                    { step: "Rejuvenate", sub: "Yoga & Activities", icon: Sun },
+                    { step: "Reflect", sub: "Inner Clarity", icon: BrainCircuit },
+                    { step: "Transform", sub: "Return Empowered", icon: Flame },
+                  ].map((phase, i) => (
+                    <motion.div key={phase.step} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
+                      className="flex flex-col items-center w-24">
+                      <div className="w-12 h-12 rounded-full bg-white border-2 border-deep-green flex items-center justify-center z-10 mb-4 shadow-md">
+                        <phase.icon className="h-5 w-5 text-deep-green" />
+                      </div>
+                      <span className="font-bold text-deep-green">{phase.step}</span>
+                      <span className="text-xs text-muted-foreground text-center mt-1">{phase.sub}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile Journey View */}
+              <div className="md:hidden space-y-6 mb-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-deep-green/30 before:to-transparent">
+                 {[
+                    { step: "Arrival", sub: "Warm Welcome", icon: Users },
+                    { step: "Relax", sub: "Unwind & Refresh", icon: Battery },
+                    { step: "Rejuvenate", sub: "Yoga & Activities", icon: Sun },
+                    { step: "Reflect", sub: "Inner Clarity", icon: BrainCircuit },
+                    { step: "Transform", sub: "Return Empowered", icon: Flame },
+                  ].map((phase, i) => (
+                    <div key={phase.step} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-deep-green bg-white text-slate-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                          <phase.icon className="h-4 w-4 text-deep-green" />
+                      </div>
+                      <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl shadow-sm bg-white border border-border">
+                          <div className="flex items-center justify-between space-x-2 mb-1">
+                              <div className="font-bold text-deep-green">{phase.step}</div>
+                          </div>
+                          <div className="text-slate-500 text-sm">{phase.sub}</div>
+                      </div>
+                  </div>
+                 ))}
+              </div>
+
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <span className="bg-white border border-border px-4 py-2 rounded-md text-sm shadow-sm flex items-center gap-2"><Activity className="h-4 w-4"/> Wellness Assessments</span>
+                <span className="bg-white border border-border px-4 py-2 rounded-md text-sm shadow-sm flex items-center gap-2"><Leaf className="h-4 w-4"/> Yoga & Meditation</span>
+                <span className="bg-white border border-border px-4 py-2 rounded-md text-sm shadow-sm flex items-center gap-2"><Users className="h-4 w-4"/> Workshops</span>
+                <span className="bg-white border border-border px-4 py-2 rounded-md text-sm shadow-sm flex items-center gap-2"><Apple className="h-4 w-4"/> Healthy Nutrition</span>
+                <span className="bg-white border border-border px-4 py-2 rounded-md text-sm shadow-sm flex items-center gap-2"><Sun className="h-4 w-4"/> Nature Experiences</span>
+              </div>
+            </div>
+
+            {/* Testimonials */}
+            <div>
+               <div className="flex items-center gap-4 mb-12">
+                  <Quote className="h-8 w-8 text-warm-gold rotate-180" />
+                  <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+                    className="font-display text-3xl font-bold text-foreground uppercase tracking-wide">
+                    What Our Participants Say
+                  </motion.h2>
+                  <Quote className="h-8 w-8 text-warm-gold" />
+              </div>
+              
+              <div className="space-y-6">
+                {[
+                  { text: "This retreat helped me manage stress, improve focus and become a better leader.", author: "CEO, Manufacturing Co.", img: "https://randomuser.me/api/portraits/men/32.jpg" },
+                  { text: "Our team came back recharged, connected and more productive.", author: "HR Head, IT Company", img: "https://randomuser.me/api/portraits/women/44.jpg" },
+                  { text: "Amodaya is not just a retreat, it's a life transforming experience.", author: "Entrepreneur", img: "https://randomuser.me/api/portraits/men/62.jpg" },
+                ].map((test, i) => (
+                  <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
+                    className="bg-white p-6 rounded-xl border border-border shadow-sm flex items-start gap-6">
+                    <img src={test.img} alt={test.author} className="w-16 h-16 rounded-full object-cover border-2 border-warm-gold/50" />
+                    <div>
+                      <p className="italic text-muted-foreground mb-4 leading-relaxed">"{test.text}"</p>
+                      <div className="flex items-center justify-between">
+                         <p className="font-semibold text-sm">— {test.author}</p>
+                         <div className="flex text-warm-gold">
+                           <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
+                         </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By */}
+      <section className="py-12 bg-white border-y border-border/40">
         <div className="container mx-auto px-4 text-center">
-          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            Join the First Community Dedicated to Connecting Wellness Professionals
-          </motion.h2>
-          <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
-            className="text-primary-foreground/80 font-body text-lg mb-8 max-w-2xl mx-auto">
-            Apply for membership and become part of India's most trusted professional wellness network today.
-          </motion.p>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2} variants={fadeUp}>
-            <Button variant="hero" size="lg" onClick={() => setFormOpen(true)}>Apply for Membership</Button>
-          </motion.div>
+          <p className="font-display font-bold text-lg uppercase tracking-wider mb-8 text-muted-foreground">Trusted By Forward-Thinking Organizations</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* Using text logos for now since actual assets might not be available */}
+            <h4 className="font-display font-bold text-2xl text-[#1f4277]">TATA</h4>
+            <h4 className="font-display font-bold text-2xl text-[#004e9c]">BAJAJ</h4>
+            <h4 className="font-display font-bold text-2xl text-[#003874]">HDFC BANK</h4>
+            <h4 className="font-display font-bold text-2xl text-[#00338d]">KPMG</h4>
+            <h4 className="font-display font-bold text-2xl text-[#86bc25]">Deloitte.</h4>
+            <h4 className="font-display font-bold text-2xl text-[#f37021]">ICICI Bank</h4>
+            <h4 className="font-display font-bold text-2xl text-[#eb2227]">kotak</h4>
+            <h4 className="font-display font-bold text-2xl text-[#d93954]">pwc</h4>
+          </div>
+          <p className="text-right text-xs text-muted-foreground mt-4">and many more...</p>
         </div>
       </section>
 
       <Footer />
       <FloatingContactButton />
-      <MembershipFormDialog open={formOpen} onOpenChange={setFormOpen} />
     </div>
   );
 };
+
+// Dummy component for Apple icon since it's not imported directly from lucide-react if missing, but we'll try to import it above. Oh wait, Apple is not standard in lucide-react, let's use Leaf or Heart.
+const Apple = ({className}: {className: string}) => <svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg>
 
 export default Index;

@@ -199,11 +199,11 @@ const Members = () => {
                 transition={{ duration: 0.5, delay: idx * 0.06 }}
                 className="bg-card rounded-2xl shadow-card hover:shadow-warm transition-all duration-300 overflow-hidden group flex flex-col"
               >
-                <div className="aspect-[3/4] overflow-hidden bg-muted">
+                <div className="aspect-square rounded-full overflow-hidden bg-muted mx-auto mt-6 w-40 h-40">
                   <img
                     src={doctor.image}
                     alt={doctor.name}
-                    className="w-full h-full object-contain object-center bg-muted group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center bg-muted group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6 text-center flex flex-col flex-1">

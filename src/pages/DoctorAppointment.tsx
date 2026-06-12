@@ -244,7 +244,7 @@ const DoctorAppointment = () => {
               >
                 {/* Doctor Image */}
                 <div className="mb-8">
-                  <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
+                  <div className="w-56 h-56 rounded-full overflow-hidden bg-muted mx-auto shadow-lg">
                     <img
                       src={doctor.image}
                       alt={doctor.name}

@@ -289,9 +289,9 @@ const Index = () => {
               
               <div className="space-y-6">
                 {[
-                  { text: "This retreat helped me manage stress, improve focus and become a better leader.", author: "CEO, Manufacturing Co.", img: "https://randomuser.me/api/portraits/men/32.jpg" },
-                  { text: "Our team came back recharged, connected and more productive.", author: "HR Head, IT Company", img: "https://randomuser.me/api/portraits/women/44.jpg" },
-                  { text: "Amodaya is not just a retreat, it's a life transforming experience.", author: "Entrepreneur", img: "https://randomuser.me/api/portraits/men/62.jpg" },
+                  { text: "This retreat helped me manage stress, improve focus and become a better leader.", author: "Rajesh Kumar, CEO, Manufacturing Co.", img: "https://randomuser.me/api/portraits/men/32.jpg" },
+                  { text: "Our team came back recharged, connected and more productive.", author: "Priya Sharma, HR Head, IT Company", img: "https://randomuser.me/api/portraits/women/44.jpg" },
+                  { text: "Amodaya is not just a retreat, it's a life transforming experience.", author: "Amit Patel, Entrepreneur", img: "https://randomuser.me/api/portraits/men/62.jpg" },
                 ].map((test, i) => (
                   <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
                     className="bg-white p-6 rounded-xl border border-border shadow-sm flex items-start gap-6">
@@ -310,25 +310,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Trusted By */}
-      <section className="py-12 bg-white border-y border-border/40">
-        <div className="container mx-auto px-4 text-center">
-          <p className="font-display font-bold text-lg uppercase tracking-wider mb-8 text-muted-foreground">Trusted By Forward-Thinking Organizations</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Using text logos for now since actual assets might not be available */}
-            <h4 className="font-display font-bold text-2xl text-[#1f4277]">TATA</h4>
-            <h4 className="font-display font-bold text-2xl text-[#004e9c]">BAJAJ</h4>
-            <h4 className="font-display font-bold text-2xl text-[#003874]">HDFC BANK</h4>
-            <h4 className="font-display font-bold text-2xl text-[#00338d]">KPMG</h4>
-            <h4 className="font-display font-bold text-2xl text-[#86bc25]">Deloitte.</h4>
-            <h4 className="font-display font-bold text-2xl text-[#f37021]">ICICI Bank</h4>
-            <h4 className="font-display font-bold text-2xl text-[#eb2227]">kotak</h4>
-            <h4 className="font-display font-bold text-2xl text-[#d93954]">pwc</h4>
-          </div>
-          <p className="text-right text-xs text-muted-foreground mt-4">and many more...</p>
         </div>
       </section>
 

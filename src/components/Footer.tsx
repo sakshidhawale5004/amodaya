@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Clock, ShieldCheck, HeartHandshake, Leaf, Star, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin, Clock, ShieldCheck, HeartHandshake, Leaf, Star, Sparkles, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -25,11 +25,21 @@ const Footer = () => {
 
             {/* Right Content - Info Cards */}
             <div className="lg:w-1/2 flex flex-col md:flex-row gap-6">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 flex-1 flex flex-col items-center text-center">
-                <MapPin className="h-10 w-10 text-warm-gold mb-4" />
-                <p className="font-semibold text-lg">Vihangs Inn,<br />Ghodbunder Road,<br />Thane West</p>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 flex-1 flex flex-col justify-center space-y-4">
+                <div className="flex items-center gap-3">
+                  <Mail className="h-6 w-6 text-warm-gold shrink-0" />
+                  <span className="font-semibold text-sm md:text-base">amodayawellness@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="h-6 w-6 text-warm-gold shrink-0" />
+                  <span className="font-semibold text-sm md:text-base">9224338833</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin className="h-6 w-6 text-warm-gold shrink-0" />
+                  <span className="font-semibold text-sm md:text-base">Mumbai / Navi Mumbai, India</span>
+                </div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 flex-1 flex flex-col items-center text-center">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 flex-1 flex flex-col items-center justify-center text-center">
                 <Clock className="h-10 w-10 text-warm-gold mb-4" />
                 <p className="font-semibold text-lg mb-2">Every<br />Monday</p>
                 <div className="w-full h-px bg-white/20 my-2"></div>

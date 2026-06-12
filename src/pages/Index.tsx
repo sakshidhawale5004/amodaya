@@ -289,21 +289,18 @@ const Index = () => {
               
               <div className="space-y-6">
                 {[
-                  { text: "This retreat helped me manage stress, improve focus and become a better leader.", author: "Rajesh Kumar, CEO, Manufacturing Co.", img: "https://randomuser.me/api/portraits/men/32.jpg" },
-                  { text: "Our team came back recharged, connected and more productive.", author: "Priya Sharma, HR Head, IT Company", img: "https://randomuser.me/api/portraits/women/44.jpg" },
-                  { text: "Amodaya is not just a retreat, it's a life transforming experience.", author: "Amit Patel, Entrepreneur", img: "https://randomuser.me/api/portraits/men/62.jpg" },
+                  { text: "This retreat helped me manage stress, improve focus and become a better leader.", author: "Rajesh Kumar, CEO, Manufacturing Co." },
+                  { text: "Our team came back recharged, connected and more productive.", author: "Priya Sharma, HR Head, IT Company" },
+                  { text: "Amodaya is not just a retreat, it's a life transforming experience.", author: "Amit Patel, Entrepreneur" },
                 ].map((test, i) => (
                   <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i} variants={fadeUp}
-                    className="bg-white p-6 rounded-xl border border-border shadow-sm flex items-start gap-6">
-                    <img src={test.img} alt={test.author} className="w-16 h-16 rounded-full object-cover border-2 border-warm-gold/50" />
-                    <div>
-                      <p className="italic text-muted-foreground mb-4 leading-relaxed">"{test.text}"</p>
-                      <div className="flex items-center justify-between">
-                         <p className="font-semibold text-sm">— {test.author}</p>
-                         <div className="flex text-warm-gold">
-                           <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
-                         </div>
-                      </div>
+                    className="bg-white p-6 rounded-xl border border-border shadow-sm flex flex-col gap-4">
+                    <p className="italic text-muted-foreground leading-relaxed">"{test.text}"</p>
+                    <div className="flex items-center justify-between">
+                       <p className="font-semibold text-sm">— {test.author}</p>
+                       <div className="flex text-warm-gold">
+                         <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
+                       </div>
                     </div>
                   </motion.div>
                 ))}

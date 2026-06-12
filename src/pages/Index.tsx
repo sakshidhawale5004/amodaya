@@ -38,15 +38,15 @@ const Index = () => {
           >
             Corporate Wellness Retreats, Stress Management Programs & Wellness Tourism Experiences for Modern Professionals & Organizations.
           </motion.p>
-          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="flex flex-wrap gap-5 justify-center">
+          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-5 justify-center px-4">
             <Button 
               onClick={() => window.location.href = '/members'}
-              className="bg-[#2A5C3D] hover:bg-[#20492F] text-white rounded-full px-8 py-6 text-[17px] font-semibold flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
+              className="bg-[#2A5C3D] hover:bg-[#20492F] text-white rounded-full px-6 sm:px-8 py-6 text-base sm:text-[17px] font-semibold flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105 w-full sm:w-auto">
               Explore Wellness Experts <ArrowRight className="h-5 w-5" />
             </Button>
             <Button 
               onClick={() => window.location.href = '/appointment'}
-              className="bg-[#F3E8D6] hover:bg-[#E5D7C0] text-[#2A5C3D] rounded-full px-8 py-6 text-[17px] font-semibold flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
+              className="bg-[#F3E8D6] hover:bg-[#E5D7C0] text-[#2A5C3D] rounded-full px-6 sm:px-8 py-6 text-base sm:text-[17px] font-semibold flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105 w-full sm:w-auto">
               Book Appointment <ChevronRight className="h-5 w-5" />
             </Button>
           </motion.div>

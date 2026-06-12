@@ -181,7 +181,7 @@ const Members = () => {
             className="text-center mb-14 max-w-3xl mx-auto"
           >
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
-              Meet Our Wellness Doctors
+              Meet Our Wellness Experts
             </h1>
             <p className="text-muted-foreground text-lg">
               A growing circle of certified doctors committed to holistic

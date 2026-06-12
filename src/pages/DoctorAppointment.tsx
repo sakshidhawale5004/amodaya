@@ -235,7 +235,7 @@ const DoctorAppointment = () => {
       <main className="flex-1 pt-24 pb-20 bg-gradient-to-br from-orange-50 via-white to-orange-50">
         <div className="container mx-auto px-4">
           {!submitted ? (
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 mb-12">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 mb-12">
               {/* Left Side - Doctor Info */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -340,9 +340,10 @@ const DoctorAppointment = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
+                className="lg:col-span-2"
               >
-                <div className="bg-white rounded-2xl shadow-card p-8 sticky top-32">
-                  <h2 className="font-display text-2xl font-bold text-foreground mb-6">
+                <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+                  <h2 className="font-display text-2xl font-bold text-foreground mb-8">
                     Book an Appointment
                   </h2>
 
@@ -356,7 +357,7 @@ const DoctorAppointment = () => {
                         <button
                           type="button"
                           onClick={() => setAppointmentType("in-clinic")}
-                          className={`flex-1 py-2 px-4 rounded-lg border-2 transition-all font-medium ${
+                          className={`flex-1 py-3 px-4 rounded-xl border-2 transition-all font-medium ${
                             appointmentType === "in-clinic"
                               ? "border-primary bg-primary text-white"
                               : "border-border text-foreground hover:border-primary"
@@ -367,7 +368,7 @@ const DoctorAppointment = () => {
                         <button
                           type="button"
                           onClick={() => setAppointmentType("tele-consult")}
-                          className={`flex-1 py-2 px-4 rounded-lg border-2 transition-all font-medium ${
+                          className={`flex-1 py-3 px-4 rounded-xl border-2 transition-all font-medium ${
                             appointmentType === "tele-consult"
                               ? "border-primary bg-primary text-white"
                               : "border-border text-foreground hover:border-primary"
@@ -407,7 +408,7 @@ const DoctorAppointment = () => {
                       <label className="block text-sm font-semibold text-foreground mb-3">
                         Select Time Slot
                       </label>
-                      <div className="grid grid-cols-4 gap-2 max-h-48 overflow-y-auto">
+                      <div className="grid grid-cols-4 gap-2 max-h-40 overflow-y-auto pr-2">
                         {timeSlots.map((slot) => (
                           <button
                             key={slot.time}
@@ -431,55 +432,56 @@ const DoctorAppointment = () => {
                     {/* Form Inputs */}
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Full Name
+                        Your Name <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="text"
+                        placeholder="Jhon Michle"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Your full name"
-                        className="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                        className="w-full px-5 py-3 rounded-xl bg-gray-100 text-foreground placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
                         required
                       />
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 98765 43210"
-                        className="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                        required
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-semibold text-foreground mb-2">
+                          Your Email <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          placeholder="address@example.com"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          className="w-full px-5 py-3 rounded-xl bg-gray-100 text-foreground placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-foreground mb-2">
+                          Phone <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="tel"
+                          placeholder="(123) 456 789 00"
+                          value={formData.phone}
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          className="w-full px-5 py-3 rounded-xl bg-gray-100 text-foreground placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                          required
+                        />
+                      </div>
                     </div>
 
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">
-                        Email (Optional)
-                      </label>
-                      <input
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="your.email@example.com"
-                        className="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Reason for Visit (Optional)
+                        Your Message
                       </label>
                       <textarea
+                        placeholder="Write your message..."
                         value={formData.reason}
                         onChange={(e) => setFormData({ ...formData, reason: e.target.value })}
-                        placeholder="Tell us about your health concern..."
-                        className="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none"
-                        rows={3}
+                        className="w-full px-5 py-3 rounded-xl bg-gray-100 text-foreground placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary resize-none h-28"
                       />
                     </div>
 
@@ -489,32 +491,18 @@ const DoctorAppointment = () => {
                     </p>
 
                     {/* Submit Buttons */}
-                    <div className="flex gap-3">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className="flex-1"
-                        onClick={() => navigate("/members")}
-                      >
-                        Cancel
-                      </Button>
-                      <Button
-                        type="submit"
-                        variant="cta"
-                        className="flex-1"
-                        disabled={!selectedDate || !selectedTime || !formData.name || !formData.phone}
-                      >
-                        Confirm Appointment
-                      </Button>
-                    </div>
+                    <button
+                      type="submit"
+                      disabled={!selectedDate || !selectedTime || !formData.name || !formData.phone || !formData.email}
+                      className="w-full bg-gradient-to-r from-green-700 to-green-800 hover:from-green-800 hover:to-green-900 text-white font-semibold py-4 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      Book a Appointment
+                    </button>
                   </form>
 
                   {/* Contact Options */}
                   <div className="flex gap-3 mt-6 pt-6 border-t border-border">
-                    <a
-                      href="tel:+919876543210"
-                      className="flex-1"
-                    >
+                    <a href="tel:+919876543210" className="flex-1">
                       <Button variant="outline" className="w-full gap-2">
                         <Phone className="h-4 w-4" />
                         Call

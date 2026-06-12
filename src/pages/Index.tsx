@@ -18,62 +18,64 @@ const Index = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
+      <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-visible pt-20 pb-24">
+        <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2070&auto=format&fit=crop" alt="Serene Yoga Landscape" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#FDFBF7] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
         
-        <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center mt-[-10vh]">
+        <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center mt-[-5vh]">
           <motion.h1
             initial="hidden" animate="visible" variants={fadeUp}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight max-w-5xl mx-auto mb-6 drop-shadow-lg"
+            className="font-display text-6xl md:text-7xl lg:text-[5.5rem] font-bold text-white leading-[1.1] max-w-5xl mx-auto mb-6 drop-shadow-md tracking-tight"
           >
             Transform <br/>
-            <span className="text-white">Stress Into Strength</span>
+            Stress Into Strength
           </motion.h1>
           <motion.p
             initial="hidden" animate="visible" custom={1} variants={fadeUp}
-            className="text-white/95 font-body text-lg md:text-xl max-w-3xl mx-auto mb-10 drop-shadow-md font-medium"
+            className="text-white/95 font-body text-lg md:text-xl max-w-3xl mx-auto mb-10 drop-shadow font-medium leading-relaxed"
           >
             Corporate Wellness Retreats, Stress Management Programs & Wellness Tourism Experiences for Modern Professionals & Organizations.
           </motion.p>
-          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="flex flex-wrap gap-4 justify-center mb-16">
-            <Button className="bg-deep-green hover:bg-deep-green/90 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center gap-2">
+          <motion.div initial="hidden" animate="visible" custom={2} variants={fadeUp} className="flex flex-wrap gap-5 justify-center">
+            <Button className="bg-[#2A5C3D] hover:bg-[#20492F] text-white rounded-full px-8 py-6 text-[17px] font-semibold flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
               Book A Corporate Retreat <ArrowRight className="h-5 w-5" />
             </Button>
-            <Button className="bg-[#EADBC8] hover:bg-[#D5C2AA] text-deep-green rounded-full px-8 py-6 text-lg font-semibold flex items-center gap-2">
+            <Button className="bg-[#F3E8D6] hover:bg-[#E5D7C0] text-[#2A5C3D] rounded-full px-8 py-6 text-[17px] font-semibold flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
               Explore Programs <ChevronRight className="h-5 w-5" />
             </Button>
           </motion.div>
+        </div>
 
-          {/* Feature Bar */}
-          <motion.div initial="hidden" animate="visible" custom={3} variants={fadeUp} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-xl w-full max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-x divide-border/50">
-              <div className="flex items-center gap-3 justify-center px-4">
-                <BrainCircuit className="h-8 w-8 text-deep-green" />
-                <span className="font-semibold text-sm text-left leading-tight">Reduce Stress <br/>& Burnout</span>
+        {/* Feature Bar */}
+        <motion.div initial="hidden" animate="visible" custom={3} variants={fadeUp} 
+          className="absolute bottom-0 left-0 right-0 z-20 translate-y-1/2 container mx-auto px-4">
+          <div className="bg-white rounded-[2rem] py-5 px-8 shadow-2xl max-w-5xl mx-auto border border-border/40">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 divide-x divide-border/60">
+              <div className="flex items-center gap-4 justify-center px-2">
+                <BrainCircuit className="h-7 w-7 text-[#2A5C3D] shrink-0" />
+                <span className="font-semibold text-[13px] md:text-[14px] text-left leading-tight text-gray-800">Reduce Stress <br/>& Burnout</span>
               </div>
-              <div className="flex items-center gap-3 justify-center px-4">
-                <Activity className="h-8 w-8 text-deep-green" />
-                <span className="font-semibold text-sm text-left leading-tight">Boost Productivity <br/>& Focus</span>
+              <div className="flex items-center gap-4 justify-center px-2">
+                <Activity className="h-7 w-7 text-[#2A5C3D] shrink-0" />
+                <span className="font-semibold text-[13px] md:text-[14px] text-left leading-tight text-gray-800">Boost Productivity <br/>& Focus</span>
               </div>
-              <div className="flex items-center gap-3 justify-center px-4">
-                <Users className="h-8 w-8 text-deep-green" />
-                <span className="font-semibold text-sm text-left leading-tight">Stronger Teams <br/>Better Bonding</span>
+              <div className="flex items-center gap-4 justify-center px-2">
+                <Users className="h-7 w-7 text-[#2A5C3D] shrink-0" />
+                <span className="font-semibold text-[13px] md:text-[14px] text-left leading-tight text-gray-800">Stronger Teams <br/>Better Bonding</span>
               </div>
-              <div className="flex items-center gap-3 justify-center px-4">
-                <Battery className="h-8 w-8 text-deep-green" />
-                <span className="font-semibold text-sm text-left leading-tight">Work-Life <br/>Balance</span>
+              <div className="flex items-center gap-4 justify-center px-2">
+                <Battery className="h-7 w-7 text-[#2A5C3D] shrink-0" />
+                <span className="font-semibold text-[13px] md:text-[14px] text-left leading-tight text-gray-800">Work-Life <br/>Balance</span>
               </div>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </section>
 
       {/* Where Wellness Meets Performance */}
-      <section id="about" className="py-24 bg-[#FDFBF7]">
+      <section id="about" className="pt-32 pb-24 bg-[#FDFBF7]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/3">

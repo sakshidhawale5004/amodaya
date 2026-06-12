@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, CalendarDays } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactDialog } from "@/components/ContactDialog";
 import { MembershipFormDialog } from "@/components/MembershipFormDialog";
@@ -9,16 +9,16 @@ import logo from "@/assets/awa-logo.jpeg";
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  const [membershipOpen, setMembershipOpen] = useState(false);
   const location = useLocation();
 
   const links = [
     { to: "/", label: "Home" },
-    { to: "/#corporate", label: "Corporate Wellness" },
-    { to: "/#tourism", label: "Wellness Tourism" },
-    { to: "/#programs", label: "Programs" },
     { to: "/about", label: "About Us" },
-    { to: "/#testimonials", label: "Testimonials" },
-    { to: "/#contact", label: "Contact" },
+    { to: "/membership", label: "Membership" },
+    { to: "/events", label: "Events" },
+    { to: "/members", label: "Doctors" },
+    { to: "/appointment", label: "Book Appointment" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -28,31 +28,33 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between h-20 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Amodaya Wellness Logo" className="h-16 w-auto" />
+            <img src={logo} alt="AWA Logo" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.to}
-                href={link.to}
-                className={`font-body text-[15px] font-semibold transition-colors hover:text-primary ${
-                  isActive(link.to) ? "text-primary" : "text-foreground"
+                to={link.to}
+                className={`font-body text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(link.to) ? "text-primary" : "text-foreground/70"
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <Button className="bg-deep-green hover:bg-deep-green/90 text-white rounded-md px-6 py-5 text-[15px] font-semibold flex items-center gap-2" onClick={() => setContactOpen(true)}>
-              <CalendarDays className="h-5 w-5" />
-              Book A Consultation
+            <Button variant="warm" size="sm" onClick={() => setContactOpen(true)}>
+              Contact Us
+            </Button>
+            <Button variant="cta" size="sm" onClick={() => setMembershipOpen(true)}>
+              Join AWA
             </Button>
           </div>
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden text-foreground"
+            className="md:hidden text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,27 +63,30 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-background border-b border-border px-4 pb-4 space-y-3">
+          <div className="md:hidden bg-background border-b border-border px-4 pb-4 space-y-3">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.to}
-                href={link.to}
+                to={link.to}
                 onClick={() => setMobileOpen(false)}
-                className={`block font-body text-[15px] font-semibold py-2 ${
-                  isActive(link.to) ? "text-primary" : "text-foreground"
+                className={`block font-body text-sm font-medium py-2 ${
+                  isActive(link.to) ? "text-primary" : "text-foreground/70"
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <Button className="bg-deep-green hover:bg-deep-green/90 text-white w-full rounded-md py-5 text-[15px] font-semibold flex items-center gap-2" onClick={() => { setContactOpen(true); setMobileOpen(false); }}>
-              <CalendarDays className="h-5 w-5" />
-              Book A Consultation
+            <Button variant="warm" size="sm" className="w-full" onClick={() => { setContactOpen(true); setMobileOpen(false); }}>
+              Contact Us
+            </Button>
+            <Button variant="cta" size="sm" className="w-full" onClick={() => { setMembershipOpen(true); setMobileOpen(false); }}>
+              Join AWA
             </Button>
           </div>
         )}
       </nav>
       <ContactDialog open={contactOpen} onOpenChange={setContactOpen} />
+      <MembershipFormDialog open={membershipOpen} onOpenChange={setMembershipOpen} />
     </>
   );
 };

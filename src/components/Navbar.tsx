@@ -17,7 +17,7 @@ const Navbar = () => {
     { to: "/about", label: "About Us" },
     { to: "/membership", label: "Membership" },
     { to: "/events", label: "Events" },
-    { to: "/members", label: "Doctors" },
+    { to: "/members", label: "Wellness Experts" },
     { to: "/appointment", label: "Book Appointment" },
   ];
 

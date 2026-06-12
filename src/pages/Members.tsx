@@ -22,7 +22,7 @@ import kalyani from "@/assets/members/dr-kalyani-patil.jpeg";
 import smita from "@/assets/members/dr-smita-lodhe.jpeg";
 import bhagyashree from "@/assets/members/bhagyashree-deshpande.jpg";
 import ruby from "@/assets/members/ruby-khan.jpeg";
-import swapnil from "@/assets/members/dr-swapnil-bhanushali.jpeg";
+import swapnil from "@/assets/members/dr-swapnil-bhanushali-final-new.jpeg";
 import priti from "@/assets/members/dr-priti-yamdagni.jpeg";
 
 type Certificate = {
